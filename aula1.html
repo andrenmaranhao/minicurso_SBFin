@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>IA Aplicada a Finanças: Aula 1 — Prof. André Maranhão</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap"/>
+<style>
+  :root {
+    --bg: #020510;
+    --surface: #080f1e;
+    --border: rgba(0,200,255,0.18);
+    --accent: #00c8ff;
+    --accent2: #7b2fff;
+    --accent3: #00ffb3;
+    --text: #e8f0ff;
+    --muted: #5a6a8a;
+    --card: rgba(8,15,30,0.85);
+  }
+
+  .reveal-viewport { background: var(--bg); }
+
+  .reveal {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--text);
+  }
+
+  /* Grid BG */
+  .reveal .slides section {
+    text-align: left;
+    height: 100%;
+  }
+
+  /* Animated grid bg on each slide */
+  .reveal .slides section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,200,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,200,255,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* Glowing orb per slide */
+  .reveal .slides section::after {
+    content: '';
+    position: absolute;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,200,255,0.12), transparent 70%);
+    top: -200px; right: -200px;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* ---- TITLE SLIDE ---- */
+  .slide-title {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem !important;
+  }
+
+  .slide-title::after {
+    background: radial-gradient(circle, rgba(123,47,255,0.2), transparent 70%) !important;
+    top: auto !important; bottom: -200px !important; left: -100px !important; right: auto !important;
+  }
+
+  .slide-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.55rem;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 0.25rem 0.7rem;
+    border-radius: 2px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    width: fit-content;
+  }
+  .slide-badge::before {
+    content: '';
+    width: 5px; height: 5px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: blink 2s infinite;
+  }
+  @keyframes blink {
+    0%,100%{opacity:1} 50%{opacity:0.2}
+  }
+
+  .slide-title h1 {
+    font-family: 'Syne', sans-serif !important;
+    font-size: 3.2rem !important;
+    font-weight: 800 !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.02em !important;
+    color: var(--text) !important;
+    text-transform: none !important;
+    text-shadow: none !important;
+    margin-bottom: 0.5rem !important;
+    border: none !important;
+  }
+
+  .slide-title .accent-line {
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+  }
+
+  .slide-title .meta {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.62rem;
+    color: var(--muted);
+    margin-top: 1.5rem;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .slide-title .meta span { color: var(--accent); }
+
+  /* ---- SECTION BREAK ---- */
+  .slide-section {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem !important;
+  }
+
+  .slide-section .section-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.55rem;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .slide-section h2 {
+    font-family: 'Syne', sans-serif !important;
+    font-size: 3rem !important;
+    font-weight: 800 !important;
+    line-height: 1.1 !important;
+    color: var(--text) !important;
+    text-transform: none !important;
+    text-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+  }
+
+  .slide-section h2 em {
+    background: linear-gradient(90deg, var(--accent), var(--accent3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-style: normal;
+  }
+
+  .slide-section .accent-bar {
+    width: 60px; height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    margin-top: 1.5rem;
+    border-radius: 2px;
+  }
+
+  /* ---- CONTENT SLIDES ---- */
+  .slide-content {
+    padding: 2.5rem 3rem !important;
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .slide-content h2 {
+    font-family: 'Syne', sans-serif !important;
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    color: var(--text) !important;
+    text-transform: none !important;
+    text-shadow: none !important;
+    border: none !important;
+    margin: 0 0 0.3rem 0 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  .slide-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.5rem;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .h-line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    margin: 0.8rem 0 1.5rem;
+    opacity: 0.3;
+  }
+
+  /* Content */
+  .reveal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .reveal ul li {
+    font-size: 0.82rem;
+    color: #a8b8d8;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    line-height: 1.5;
+  }
+
+  .reveal ul li::before {
+    content: '→';
+    color: var(--accent);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  .reveal ul li strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  /* Cards grid inside slide */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .card-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .mini-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mini-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+  }
+
+  .mini-card.green::before { background: linear-gradient(90deg, var(--accent3), var(--accent)); }
+  .mini-card.purple::before { background: linear-gradient(90deg, var(--accent2), var(--accent)); }
+
+  .mini-card .card-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.58rem;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .mini-card.green .card-title { color: var(--accent3); }
+  .mini-card.purple .card-title { color: #b08fff; }
+
+  .mini-card p {
+    font-size: 0.72rem;
+    color: #8a9ab8;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* Quote block */
+  .quote-block {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+    padding: 1.2rem 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.78rem;
+    color: #8a9ab8;
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  .quote-attribution {
+    display: block;
+    margin-top: 0.8rem;
+    font-style: normal;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.55rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+  }
+
+  /* Definition cards for AI/ML/DL */
+  .def-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .def-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.2rem;
+    text-align: center;
+  }
+
+  .def-card .def-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .def-card .def-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+
+  .def-card p {
+    font-size: 0.68rem;
+    color: #7a8aa8;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .def-card.d1 { border-top: 2px solid var(--accent); }
+  .def-card.d2 { border-top: 2px solid var(--accent2); }
+  .def-card.d3 { border-top: 2px solid var(--accent3); }
+
+  /* Timeline */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+  }
+
+  .tl-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 0.72rem;
+  }
+
+  .tl-year {
+    font-family: 'Space Mono', monospace;
+    color: var(--accent);
+    min-width: 70px;
+    font-size: 0.65rem;
+    padding-top: 0.1rem;
+    letter-spacing: 0.05em;
+  }
+
+  .tl-text {
+    color: #8a9ab8;
+    flex: 1;
+    border-left: 1px solid var(--border);
+    padding-left: 0.8rem;
+    line-height: 1.4;
+  }
+
+  /* Formula */
+  .formula-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--accent3);
+    margin: 0.8rem 0;
+    letter-spacing: 0.05em;
+  }
+
+  /* Hallucination highlight */
+  .highlight-box {
+    background: rgba(123,47,255,0.08);
+    border: 1px solid rgba(123,47,255,0.3);
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: #c0b0ff;
+    line-height: 1.5;
+  }
+
+  .highlight-box .hb-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.55rem;
+    color: var(--accent2);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+
+  /* RAG diagram */
+  .rag-flow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .rag-node {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.5rem 0.8rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--text);
+    text-align: center;
+    letter-spacing: 0.05em;
+    min-width: 70px;
+  }
+
+  .rag-node.highlighted { border-color: var(--accent); color: var(--accent); }
+  .rag-node.green { border-color: var(--accent3); color: var(--accent3); }
+
+  .rag-arrow {
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  /* Finance cards */
+  .fin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .fin-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.9rem 1rem;
+  }
+
+  .fin-card .fc-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.55rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.4rem;
+  }
+
+  .fin-card h4 {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 0.3rem;
+  }
+
+  .fin-card p {
+    font-size: 0.68rem;
+    color: #7a8aa8;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  /* Transformer diagram */
+  .transformer-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  .t-col {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem;
+  }
+
+  .t-col .tc-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+
+  .t-col.encoder .tc-title { color: var(--accent); }
+  .t-col.decoder .tc-title { color: var(--accent2); }
+
+  .t-col ul { gap: 0.4rem; }
+  .t-col ul li { font-size: 0.68rem; }
+  .t-col ul li::before { font-size: 0.65rem; }
+
+  /* Curiosity box */
+  .curiosity {
+    background: rgba(0,255,179,0.05);
+    border: 1px solid rgba(0,255,179,0.25);
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.72rem;
+    color: #90e8c8;
+    line-height: 1.5;
+  }
+
+  .curiosity .c-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.52rem;
+    color: var(--accent3);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+
+  /* Progress bar */
+  .reveal .progress { background: rgba(0,200,255,0.1); height: 3px; }
+  .reveal .progress span { background: linear-gradient(90deg, var(--accent), var(--accent2)); }
+
+  /* Slide number */
+  .reveal .slide-number {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.55rem;
+    color: var(--muted);
+    background: transparent;
+    right: 1.5rem;
+    bottom: 1rem;
+  }
+
+  /* Controls */
+  .reveal .controls { color: var(--accent); }
+
+  /* Fragment animations */
+  .reveal .fragment { opacity: 0; transform: translateY(12px); transition: all 0.4s ease; }
+  .reveal .fragment.visible { opacity: 1; transform: translateY(0); }
+
+  /* Two-col layout */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  /* Big stat */
+  .big-stat {
+    font-family: 'Syne', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, var(--accent), var(--accent3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .big-stat-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* Warning box */
+  .warn-box {
+    background: rgba(255,80,80,0.07);
+    border: 1px solid rgba(255,80,80,0.25);
+    border-radius: 6px;
+    padding: 0.9rem 1.2rem;
+    font-size: 0.72rem;
+    color: #ffaaaa;
+    line-height: 1.5;
+  }
+  .warn-box .w-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.52rem;
+    color: #ff8080;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+  }
+
+  /* Horizontal rule */
+  .h-rule {
+    width: 100%; height: 1px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    margin: 1rem 0;
+    opacity: 0.25;
+  }
+
+  /* Metric rows */
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+  }
+
+  .metric {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  .metric .m-val {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--accent3);
+    margin-bottom: 0.3rem;
+  }
+
+  .metric .m-label {
+    font-size: 0.6rem;
+    color: var(--muted);
+    line-height: 1.3;
+  }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- =========================================
+     SLIDE 1: TÍTULO
+     ========================================= -->
+<section class="slide-title">
+  <div class="slide-badge">SBFin · Escola de Finanças · Maio 2026</div>
+  <h1>
+    IA Aplicada
+    <span class="accent-line">a Finanças</span>
+  </h1>
+  <p style="font-size:0.7rem; color:#6a8ab0; max-width:500px; margin:1rem 0; line-height:1.6; font-family:'Inter',sans-serif;">
+    Fundamentos de Inteligência Artificial, Redes Neurais e Large Language Models — do conceito matemático às aplicações em mercados financeiros.
+  </p>
+  <div class="meta">
+    <span>Prof.</span> André Nunes Maranhão &nbsp;·&nbsp; <span>FGV-EESP</span> &nbsp;·&nbsp; <span>Aula 01</span>
+  </div>
+</section>
+
+<!-- =========================================
+     SLIDE 2: A VELOCIDADE DA EVOLUÇÃO
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// motivadores</div>
+  <h2>A Velocidade da Evolução Tecnológica</h2>
+  <div class="h-line"></div>
+  <div class="timeline">
+    <div class="tl-item fragment">
+      <span class="tl-year">~300k anos</span>
+      <span class="tl-text">Domínio do fogo</span>
+    </div>
+    <div class="tl-item fragment">
+      <span class="tl-year">~100k anos</span>
+      <span class="tl-text">Da linguagem</span>
+    </div>
+    <div class="tl-item fragment">
+      <span class="tl-year">~20k anos</span>
+      <span class="tl-text">Da matemática</span>
+    </div>
+    <div class="tl-item fragment">
+      <span class="tl-year">300 anos</span>
+      <span class="tl-text">Da probabilidade</span>
+    </div>
+    <div class="tl-item fragment">
+      <span class="tl-year">100 anos</span>
+      <span class="tl-text">Da estatística</span>
+    </div>
+    <div class="tl-item fragment">
+      <span class="tl-year">50 anos</span>
+      <span class="tl-text">Da computação</span>
+    </div>
+    <div class="tl-item fragment">
+      <span class="tl-year">30 anos</span>
+      <span class="tl-text">Da internet</span>
+    </div>
+    <div class="tl-item fragment">
+      <span class="tl-year">13 anos</span>
+      <span class="tl-text">Processamento de imagem e voz</span>
+    </div>
+    <div class="tl-item fragment">
+      <span class="tl-year" style="color:var(--accent3);">3 anos</span>
+      <span class="tl-text" style="color:#c0d8f0;">LLMs de uso massivo — <strong style="color:var(--text);">qual o próximo passo?</strong></span>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     SLIDE 3: QUOTE FRISCH
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// motivadores · dados & teoria</div>
+  <h2>Uma Questão de 1933 que Ainda Ressoa</h2>
+  <div class="h-line"></div>
+  <div class="quote-block fragment">
+    "Estamos acumulando informação estatística a uma taxa sem precedentes. Mas nenhuma informação estatística, por mais completa e exata, pode explicar o fenômeno econômico. Se não queremos nos perder nessa massa impressionante de dados estatísticos, precisamos da guia e ajuda de um <strong style="color:var(--text);">poderoso arcabouço teórico</strong>. Sem isso, nenhuma interpretação significante é possível."
+    <span class="quote-attribution">— Ragnar Frisch, Econometrica 1(1): 1-4, 1933</span>
+  </div>
+  <div class="curiosity fragment" style="margin-top:1.2rem;">
+    <div class="c-label">⊹ Provocação</div>
+    Essa frase foi escrita há mais de 90 anos. A abundância de dados sem teoria suficiente é o risco central da era dos LLMs — e o que justifica o estudo aprofundado que faremos neste curso.
+  </div>
+</section>
+
+<!-- =========================================
+     SLIDE 4: QUOTE JENSEN HUANG + LEIBNIZ
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// motivadores · o futuro</div>
+  <h2>"Ninguém Vai Precisar Mais Programar"</h2>
+  <div class="h-line"></div>
+  <div class="two-col">
+    <div class="fragment">
+      <div class="quote-block" style="height:100%; border-left-color:var(--accent2);">
+        "Nosso trabalho é criar tecnologia informática para que <strong style="color:var(--text);">ninguém precise programar</strong>."
+        <span class="quote-attribution" style="color:var(--accent2);">— Jensen Huang, CEO da NVIDIA</span>
+      </div>
+    </div>
+    <div class="fragment">
+      <div class="quote-block" style="height:100%; border-left-color:var(--accent3);">
+        "Os matemáticos <strong style="color:var(--text);">não serão mais necessários</strong> depois da invenção da máquina de calcular."
+        <span class="quote-attribution" style="color:var(--accent3);">— Sobre a "roda graduada" de Leibniz, 1671</span>
+      </div>
+    </div>
+  </div>
+  <div class="highlight-box fragment">
+    <div class="hb-label">✦ Reflexão</div>
+    A história mostra que automação de tarefas não elimina profissionais — reposiciona competências. Matemáticos, programadores e analistas continuaram sendo mais necessários depois. A questão é: para quê?
+  </div>
+</section>
+
+<!-- =========================================
+     SLIDE 5: SECTION BREAK — IA
+     ========================================= -->
+<section class="slide-section">
+  <div class="section-num">// 01 — Fundamentos</div>
+  <h2>Inteligência<br/><em>Artificial</em></h2>
+  <div class="accent-bar"></div>
+</section>
+
+<!-- =========================================
+     SLIDE 6: HIERARQUIA IA/ML/DL
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// fundamentos</div>
+  <h2>Hierarquia: IA, Machine Learning e Deep Learning</h2>
+  <div class="h-line"></div>
+  <div class="def-grid fragment">
+    <div class="def-card d1">
+      <div class="def-title">Artificial Intelligence</div>
+      <p>Qualquer técnica que capacite uma máquina a imitar a inteligência humana.</p>
+    </div>
+    <div class="def-card d2">
+      <div class="def-title">Machine Learning</div>
+      <p>Métodos estatísticos que possibilitam que as máquinas aprendam a partir dos dados, sem programação explícita.</p>
+    </div>
+    <div class="def-card d3">
+      <div class="def-title">Deep Learning</div>
+      <p>Redes neurais com múltiplas camadas que assimilam tarefas e reconhecem símbolos a partir dos dados.</p>
+    </div>
+  </div>
+  <div class="fragment" style="margin-top:1rem;">
+    <div class="formula-box">IA ⊃ Machine Learning ⊃ Deep Learning ⊃ LLMs</div>
+  </div>
+</section>
+
+<!-- =========================================
+     SLIDE 7: COMO MÁQUINAS ENTENDEM O MUNDO
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// fundamentos · representação</div>
+  <h2>Como Máquinas Entendem o Mundo?</h2>
+  <div class="h-line"></div>
+  <ul>
+    <li class="fragment">Como <strong>enxergam</strong> o mundo? → Matrizes de pixels (ex: 32×32×3 = 3.072 valores)</li>
+    <li class="fragment">Como <strong>ouvem</strong> o mundo? → Séries temporais de amplitude sonora</li>
+    <li class="fragment">Como <strong>falam</strong> com o mundo? → Probabilidades sobre tokens de vocabulário</li>
+    <li class="fragment">Como <strong>leem</strong> textos? → Vetores de embedding em espaços de alta dimensão</li>
+  </ul>
+  <div class="formula-box fragment" style="margin-top:1rem;">
+    TUDO é representado como matrizes de números reais
+  </div>
+  <div class="curiosity fragment">
+    <div class="c-label">⊹ Exemplo</div>
+    Uma imagem colorida de 32×32 pixels tem 3.072 entradas. Uma frase de 50 palavras, com embeddings de 768 dimensões, ocupa uma matriz de 50×768 = 38.400 valores. Um LLM como o GPT-4 opera com matrizes de bilhões de parâmetros.
+  </div>
+</section>
+
+<!-- =========================================
+     SLIDE 8: SECTION BREAK — LLMs
+     ========================================= -->
+<section class="slide-section">
+  <div class="section-num">// 02 — Transformers & LLMs</div>
+  <h2>Large Language<br/><em>Models</em></h2>
+  <div class="accent-bar"></div>
+</section>
+
+<!-- =========================================
+     SLIDE 9: O QUE SÃO LLMs
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// LLMs · definição</div>
+  <h2>O que são LLMs?</h2>
+  <div class="h-line"></div>
+  <ul>
+    <li class="fragment"><strong>Tokens:</strong> unidades básicas — palavras, subpalavras ou caracteres</li>
+    <li class="fragment"><strong>Embeddings:</strong> representações vetoriais de tokens em espaço de alta dimensão</li>
+    <li class="fragment"><strong>Treinamento:</strong> bilhões de textos — livros, artigos, código, web</li>
+    <li class="fragment"><strong>Objetivo:</strong> prever o próximo token dado um contexto</li>
+  </ul>
+  <div class="formula-box fragment">
+    P(token_{t+1} | token_1, token_2, ..., token_t) = f_θ(contexto)
+  </div>
+  <div class="highlight-box fragment">
+    <div class="hb-label">⚡ Insight Central</div>
+    Do ponto de vista matemático, LLMs são <strong style="color:var(--text);">preditores da próxima palavra (ou token)</strong> dado um contexto. A "inteligência" emerge como subproduto de prever linguagem em escala massiva.
+  </div>
+</section>
+
+<!-- =========================================
+     SLIDE 10: POR QUE TRANSFORMERS?
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// LLMs · arquitetura</div>
+  <h2>Por que Transformers?</h2>
+  <div class="h-line"></div>
+  <div class="card-grid-2 fragment">
+    <div class="mini-card">
+      <div class="card-title">Antes — RNNs e LSTMs</div>
+      <p>Dominavam o processamento sequencial. Problema: dificuldade para lidar com <strong>dependências de longo prazo</strong>. Processamento serial.</p>
+    </div>
+    <div class="mini-card green">
+      <div class="card-title" style="color:var(--accent3);">Solução — Transformers (2017)</div>
+      <p>Mecanismo de <strong style="color:var(--text);">atenção</strong> conecta todas as palavras diretamente. Processamento paralelo. Escalável a bilhões de parâmetros.</p>
+    </div>
+  </div>
+  <div class="formula-box fragment">
+    Attention(Q, K, V) = softmax( QKᵀ / √d_k ) · V
+  </div>
+  <ul class="fragment" style="margin-top:0.5rem;">
+    <li>Q = Queries · K = Keys · V = Values</li>
+    <li>Cada palavra "olha" para todas as outras e pondera sua relevância</li>
+    <li>Múltiplas "cabeças" de atenção operam em paralelo (Multi-Head Attention)</li>
+  </ul>
+</section>
+
+<!-- =========================================
+     SLIDE 11: ENCODER / DECODER
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// LLMs · arquitetura transformer</div>
+  <h2>Encoder e Decoder</h2>
+  <div class="h-line"></div>
+  <div class="transformer-cols fragment">
+    <div class="t-col encoder">
+      <div class="tc-title">// Encoder</div>
+      <ul>
+        <li>Recebe a sequência de entrada (frase)</li>
+        <li>Embedding + Posição</li>
+        <li>Self-Attention: cada palavra "olha" para todas</li>
+        <li>Feed-forward por camada</li>
+        <li>Gera representação contextualizada</li>
+      </ul>
+    </div>
+    <div class="t-col decoder">
+      <div class="tc-title" style="color:var(--accent2);">// Decoder</div>
+      <ul>
+        <li>Recebe representações do Encoder</li>
+        <li>Masked Self-Attention (não vê futuro)</li>
+        <li>Atenção cruzada sobre o Encoder</li>
+        <li>Feed-forward por camada</li>
+        <li>Prevê o próximo token</li>
+      </ul>
+    </div>
+  </div>
+  <div class="curiosity fragment">
+    <div class="c-label">⊹ Embeddings Posicionais</div>
+    Transformers não têm noção intrínseca de ordem. Por isso, vetores de posição são adicionados aos embeddings — permitindo ao modelo capturar a sequência das palavras.
+  </div>
+</section>
+
+<!-- =========================================
+     SLIDE 12: ALUCINAÇÕES
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// LLMs · limitações</div>
+  <h2>O Problema das Alucinações</h2>
+  <div class="h-line"></div>
+  <ul>
+    <li class="fragment"><strong>Contexto:</strong> conjunto matricial com valores comuns a um determinado assunto</li>
+    <li class="fragment"><strong>Problema:</strong> matrizes com valores próximos mas diferentes por ruído</li>
+    <li class="fragment"><strong>Resultado:</strong> o modelo "interpola" e gera informação plausível, porém falsa</li>
+  </ul>
+  <div class="warn-box fragment" style="margin-top:1rem;">
+    <div class="w-label">⚠ Alucinação</div>
+    Respostas factualmente incorretas apesar do tom confiante e legítimo. O modelo é treinado para produzir textos <strong style="color:var(--text);">plausíveis</strong> — não necessariamente verdadeiros. "Mentindo com confiança."
+  </div>
+  <ul class="fragment" style="margin-top:0.8rem;">
+    <li><strong>Falta de grounding:</strong> LLMs não consultam fontes por padrão</li>
+    <li><strong>Cálculos encadeados:</strong> erros se propagam com aparência de certeza</li>
+    <li><strong>Citações e eventos recentes:</strong> podem ser fabricados</li>
+  </ul>
+</section>
+
+<!-- =========================================
+     SLIDE 13: SECTION BREAK — RAG
+     ========================================= -->
+<section class="slide-section">
+  <div class="section-num">// 03 — Reduzindo Alucinações</div>
+  <h2>Retrieval Augmented<br/><em>Generation</em></h2>
+  <div class="accent-bar"></div>
+</section>
+
+<!-- =========================================
+     SLIDE 14: O QUE É RAG
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// RAG · definição</div>
+  <h2>O que é RAG?</h2>
+  <div class="h-line"></div>
+  <p style="font-size:0.75rem; color:#8a9ab8; margin-bottom:1rem;" class="fragment">
+    Modelos que complementam LLMs utilizando a <strong style="color:var(--text);">sequência de entrada x</strong> para recuperar documentos <strong style="color:var(--text);">z</strong> e os utilizam como contexto adicional ao gerar a sequência <strong style="color:var(--text);">y</strong>.
+  </p>
+  <div class="rag-flow fragment">
+    <div class="rag-node highlighted">PERGUNTA<br/><span style="font-size:0.5rem;color:var(--muted);">x</span></div>
+    <span class="rag-arrow">→</span>
+    <div class="rag-node highlighted">RETRIEVER<br/><span style="font-size:0.5rem;color:var(--muted);">busca z</span></div>
+    <span class="rag-arrow">→</span>
+    <div class="rag-node">DOCUMENTOS<br/><span style="font-size:0.5rem;color:var(--muted);">z</span></div>
+    <span class="rag-arrow">→</span>
+    <div class="rag-node">LLM<br/><span style="font-size:0.5rem;color:var(--muted);">x + z</span></div>
+    <span class="rag-arrow">→</span>
+    <div class="rag-node green">RESPOSTA<br/><span style="font-size:0.5rem;color:var(--muted);">y</span></div>
+  </div>
+  <div class="card-grid fragment" style="margin-top:1rem; grid-template-columns:1fr 1fr 1fr;">
+    <div class="mini-card">
+      <div class="card-title">Fidelidade</div>
+      <p>A adição de informação (x+z) auxilia na geração de respostas contextualmente apropriadas.</p>
+    </div>
+    <div class="mini-card green">
+      <div class="card-title" style="color:var(--accent3);">Referências</div>
+      <p>Acesso irrestrito aos documentos (z) habilita respostas associadas a fontes controláveis.</p>
+    </div>
+    <div class="mini-card purple">
+      <div class="card-title">Baixa Alucinação</div>
+      <p>Aplicações de LLM com RAG têm menor probabilidade de gerar respostas incorretas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     SLIDE 15: MÉTRICAS RAG
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// RAG · avaliação</div>
+  <h2>Métricas de Avaliação do RAG</h2>
+  <div class="h-line"></div>
+  <div class="card-grid-2 fragment">
+    <div class="mini-card">
+      <div class="card-title">// Generation</div>
+      <ul style="gap:0.5rem;">
+        <li style="font-size:0.68rem;"><strong>Fidelidade</strong> — o quão factualmente correta a resposta gerada está</li>
+        <li style="font-size:0.68rem;"><strong>Relevância</strong> — o quão relevante a resposta é em relação à pergunta</li>
+      </ul>
+    </div>
+    <div class="mini-card green">
+      <div class="card-title" style="color:var(--accent3);">// Retrieval</div>
+      <ul style="gap:0.5rem;">
+        <li style="font-size:0.68rem;"><strong>Precisão do Contexto</strong> — a razão entre sinal e ruído do contexto recuperado</li>
+        <li style="font-size:0.68rem;"><strong>Revocação do Contexto</strong> — quanto da informação relevante foi recuperada</li>
+      </ul>
+    </div>
+  </div>
+  <div class="curiosity fragment" style="margin-top:1rem;">
+    <div class="c-label">⊹ Arquitetura Típica</div>
+    Ferramentas como <strong>LangChain</strong> + <strong>ChromaDB</strong> (vector store) + <strong>OpenAI/Anthropic</strong> formam a base de sistemas RAG: Document Loader → Embedding Model → Vector DB → Retriever → LLM → Resposta.
+  </div>
+</section>
+
+<!-- =========================================
+     SLIDE 16: SECTION BREAK — FINANÇAS
+     ========================================= -->
+<section class="slide-section">
+  <div class="section-num">// 04 — Aplicações</div>
+  <h2>IA em<br/><em>Finanças</em></h2>
+  <div class="accent-bar"></div>
+</section>
+
+<!-- =========================================
+     SLIDE 17: APLICAÇÕES EM FINANÇAS
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// finanças · aplicações de LLMs</div>
+  <h2>LLMs Aplicados a Finanças</h2>
+  <div class="h-line"></div>
+  <div class="fin-grid fragment">
+    <div class="fin-card">
+      <div class="fc-num">01</div>
+      <h4>Análise de Sentimento</h4>
+      <p>LLMs analisam grandes volumes de notícias financeiras e redes sociais para avaliar o sentimento do mercado. (Bollen et al., 2011)</p>
+    </div>
+    <div class="fin-card">
+      <div class="fc-num">02</div>
+      <h4>Previsão de Mercados</h4>
+      <p>Predição de movimentos de mercado com base em análise de notícias e eventos econômicos. (Ding, 2015)</p>
+    </div>
+    <div class="fin-card">
+      <div class="fc-num">03</div>
+      <h4>Gestão de Riscos</h4>
+      <p>Avaliação e gestão de riscos financeiros por análise de grandes volumes de dados e identificação de ameaças. (Guo et al., 2016)</p>
+    </div>
+    <div class="fin-card">
+      <div class="fc-num">04</div>
+      <h4>Recomendações</h4>
+      <p>Fornecimento de recomendações personalizadas de investimento com base em perfil de risco e objetivos. (Berk & Bickel, 2019)</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     SLIDE 18: BASE MATEMÁTICA
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// fundamentos · matemática</div>
+  <h2>A Base Matemática da IA</h2>
+  <div class="h-line"></div>
+  <div class="card-grid-2 fragment">
+    <div class="mini-card">
+      <div class="card-title">// Pilares Teóricos</div>
+      <p style="font-size:0.65rem; line-height:1.6;">
+        Teorema Central do Limite · Bayes · Máxima Verossimilhança · Separabilidade de Cover · Completação de Kolmogorov · Markov · Representação de Mercer · <strong>Aproximação Universal</strong> · PCA · Farkas · Descida de Gradiente
+      </p>
+    </div>
+    <div class="mini-card purple">
+      <div class="card-title">// Limitações Fundamentais</div>
+      <p style="font-size:0.65rem; line-height:1.6;">
+        Problemas NP-Completos · Problema de Parada · Teoria de Kolmogorov · Teoria da Informação de Shannon · <strong>Overfitting</strong> · Múltiplos Mínimos Locais
+      </p>
+    </div>
+  </div>
+  <div class="warn-box fragment" style="margin-top:1rem;">
+    <div class="w-label">⚠ Ponto Crítico</div>
+    Os mesmos teoremas que fundamentam a IA carregam <strong style="color:var(--text);">severas limitações de utilização</strong>. Conhecer os fundamentos matemáticos é essencial para não cair nas armadilhas de uso irresponsável de modelos.
+  </div>
+</section>
+
+<!-- =========================================
+     SLIDE 19: RESUMO
+     ========================================= -->
+<section class="slide-content">
+  <div class="slide-label">// resumo · aula 01</div>
+  <h2>O que Vimos Hoje</h2>
+  <div class="h-line"></div>
+  <div class="card-grid fragment" style="grid-template-columns: repeat(3, 1fr);">
+    <div class="mini-card">
+      <div class="card-title">01 · Fundamentos</div>
+      <p>Hierarquia IA → ML → Deep Learning → LLMs. Representação matricial do mundo.</p>
+    </div>
+    <div class="mini-card green">
+      <div class="card-title">02 · Transformers</div>
+      <p>Arquitetura Encoder/Decoder, atenção, embeddings posicionais e multi-head attention.</p>
+    </div>
+    <div class="mini-card purple">
+      <div class="card-title">03 · RAG</div>
+      <p>Como reduzir alucinações com retrieval. Métricas: fidelidade, relevância, precisão e revocação.</p>
+    </div>
+  </div>
+  <div class="two-col fragment" style="margin-top:1rem; gap:1rem;">
+    <div class="curiosity">
+      <div class="c-label">⊹ Próximas aulas</div>
+      Dia 2: Ferramentas de IA, prompting avançado, APIs e workflows para finanças.<br/>
+      Dia 3: Demonstrações ao vivo com dados reais.
+    </div>
+    <div class="warn-box">
+      <div class="w-label">⚠ Lembre-se</div>
+      LLMs cometem erros. Use intensamente para aprender, mas valide sempre. A responsabilidade sobre os resultados é <strong style="color:var(--text);">sua</strong>.
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     SLIDE 20: ENCERRAMENTO
+     ========================================= -->
+<section class="slide-title" style="text-align:center; align-items:center;">
+  <div class="slide-badge" style="margin:0 auto 2rem;">FGV-EESP · SBFin 2026</div>
+  <h1 style="text-align:center;">
+    <span class="accent-line">Obrigado!</span>
+  </h1>
+  <p style="font-size:0.72rem; color:#6a8ab0; margin:1.5rem auto; max-width:400px; text-align:center; line-height:1.6;">
+    Prof. André Nunes Maranhão<br/>
+    FGV-EESP — Programa MASTER em Finanças, Economia e Data Science
+  </p>
+  <div class="meta" style="justify-content:center;">
+    <span>Slides</span> Aula 01 · IA Aplicada a Finanças
+  </div>
+</section>
+
+</div><!-- /slides -->
+</div><!-- /reveal -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.js"></script>
+<script>
+Reveal.initialize({
+  hash: true,
+  slideNumber: 'c/t',
+  progress: true,
+  transition: 'fade',
+  transitionSpeed: 'fast',
+  backgroundTransition: 'fade',
+  center: false,
+  width: 1280,
+  height: 720,
+  margin: 0,
+  minScale: 0.2,
+  maxScale: 2.0,
+  fragments: true,
+  fragmentInURL: false,
+  controls: true,
+  controlsTutorial: true,
+  keyboard: true,
+  overview: true,
+  touch: true,
+});
+</script>
+</body>
+</html>
