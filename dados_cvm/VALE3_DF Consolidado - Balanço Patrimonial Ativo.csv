@@ -1,0 +1,615 @@
+CNPJ_CIA,CD_CVM,DT_REFER,DT_INI_EXERC,DT_FIM_EXERC,DENOM_CIA,VERSAO,GRUPO_DFP,MOEDA,ESCALA_MOEDA,ORDEM_EXERC,CD_CONTA,DS_CONTA,VL_CONTA,COLUNA_DF,source_file
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1,Ativo Total,345549435,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01,Ativo Circulante,60417700,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.01,Caixa e Equivalentes de Caixa,14021704,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02,Aplicações Financeiras,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.01,Títulos para Negociação,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.02,Títulos Disponíveis para Venda,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.02,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.02.01,Títulos Mantidos até o Vencimento,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03,Contas a Receber,6036035,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.01,Clientes,5763286,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.02,Outras Contas a Receber,272749,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.04,Estoques,13774724,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.05,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06,Tributos a Recuperar,8995056,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06.01,Tributos Correntes a Recuperar,8995056,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.07,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08,Outros Ativos Circulantes,17590181,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.01,Ativos Não-Correntes a Venda,15792385,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03,Outros,1797796,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02,Ativo Não Circulante,285131735,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01,Ativo Realizável a Longo Prazo,41601648,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01.01,Títulos para Negociação,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01.02,Títulos Disponíveis para Venda,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.02,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.02.01,Títulos Mantidos até o Vencimento,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03,Contas a Receber,732395,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03.01,Clientes,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03.02,Outras Contas a Receber,732395,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04,Estoques,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.05,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.06,Tributos Diferidos,30867534,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.06.01,Imposto de Renda e Contribuição Social Diferidos,30867534,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08,Créditos com Partes Relacionadas,5353,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08.01,Créditos com Coligadas,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08.03,Créditos com Controladores,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08.04,Créditos com Outras Partes Relacionadas,5353,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09,Outros Ativos Não Circulantes,9996366,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02,Investimentos,11481466,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01,Participações Societárias,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.01,Participações em Coligadas,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.04,Outras Participações Societárias,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.02,Propriedades para Investimento,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03,Imobilizado,211259131,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.01,Imobilizado em Operação,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.02,Imobilizado Arrendado,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.03,Imobilizado em Andamento,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04,Intangível,20789490,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01,Intangíveis,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01.01,Contrato de Concessão,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2015-12-31,NA,2015-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.02,Goodwill,0,NA,dfp_cia_aberta_BPA_con_2015.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1,Ativo Total,322696154,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01,Ativo Circulante,73547191,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.01,Caixa e Equivalentes de Caixa,13890591,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02,Aplicações Financeiras,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.01,Títulos para Negociação,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.02,Títulos Disponíveis para Venda,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.02,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.02.01,Títulos Mantidos até o Vencimento,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03,Contas a Receber,12169422,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.01,Clientes,11937366,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.02,Outras Contas a Receber,232056,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.04,Estoques,10913419,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.05,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06,Tributos a Recuperar,5814723,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06.01,Tributos Correntes a Recuperar,5814723,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.07,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08,Outros Ativos Circulantes,30759036,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.01,Ativos Não-Correntes a Venda,27994061,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03,Outros,2764975,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.01,Instrumentos financeiros derivativos,892429,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.02,Outros,1872546,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02,Ativo Não Circulante,249148963,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01,Ativo Realizável a Longo Prazo,34092439,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01.01,Títulos para Negociação,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01.02,Títulos Disponíveis para Venda,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.02,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.02.01,Títulos Mantidos até o Vencimento,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03,Contas a Receber,587274,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03.01,Clientes,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03.02,Outras Contas a Receber,587274,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04,Estoques,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.05,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.06,Tributos Diferidos,23930905,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.06.01,Imposto de Renda e Contribuição Social Diferidos,23930905,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08,Créditos com Partes Relacionadas,5130,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08.01,Créditos com Coligadas,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08.03,Créditos com Controladores,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08.04,Créditos com Outras Partes Relacionadas,5130,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09,Outros Ativos Não Circulantes,9569130,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.03,Instrumentos financeiros derivativos,1453987,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.04,Outros,8115143,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02,Investimentos,12046204,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01,Participações Societárias,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.01,Participações em Coligadas,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.04,Outras Participações Societárias,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.02,Propriedades para Investimento,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03,Imobilizado,180615914,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.01,Imobilizado em Operação,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.02,Imobilizado Arrendado,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.03,Imobilizado em Andamento,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04,Intangível,22394406,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01,Intangíveis,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01.01,Contrato de Concessão,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2016-12-31,NA,2016-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.02,Goodwill,0,NA,dfp_cia_aberta_BPA_con_2016.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1,Ativo Total,328096703,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01,Ativo Circulante,62700728,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.01,Caixa e Equivalentes de Caixa,14317520,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02,Aplicações Financeiras,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.01,Títulos para Negociação,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.02,Títulos Disponíveis para Venda,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.02,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.02.01,Títulos Mantidos até o Vencimento,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03,Contas a Receber,14879422,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.01,Clientes,8602083,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.02,Outras Contas a Receber,6277339,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.04,Estoques,12987175,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.05,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06,Tributos a Recuperar,6459818,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06.01,Tributos Correntes a Recuperar,6459818,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.07,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08,Outros Ativos Circulantes,14056793,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.01,Ativos Não-Correntes a Venda,11864720,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03,Outros,2192073,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.01,Instrumentos financeiros derivativos,350993,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.02,Outros,1841080,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02,Ativo Não Circulante,265395975,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01,Ativo Realizável a Longo Prazo,43965383,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01.01,Títulos para Negociação,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01.02,Títulos Disponíveis para Venda,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.02,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.02.01,Títulos Mantidos até o Vencimento,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03,Contas a Receber,497976,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03.01,Clientes,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03.02,Outras Contas a Receber,497976,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04,Estoques,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.05,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.06,Tributos Diferidos,21958779,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.06.01,Imposto de Renda e Contribuição Social Diferidos,21958779,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08,Créditos com Partes Relacionadas,8694957,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08.01,Créditos com Coligadas,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08.03,Créditos com Controladores,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08.04,Créditos com Outras Partes Relacionadas,8694957,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09,Outros Ativos Não Circulantes,12813671,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.03,Instrumentos financeiros derivativos,1497215,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.04,Outros,11316456,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02,Investimentos,11801596,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01,Participações Societárias,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.01,Participações em Coligadas,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.04,Outras Participações Societárias,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.02,Propriedades para Investimento,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03,Imobilizado,181534815,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.01,Imobilizado em Operação,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.02,Imobilizado Arrendado,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.03,Imobilizado em Andamento,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04,Intangível,28094181,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01,Intangíveis,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01.01,Contrato de Concessão,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2017-12-31,NA,2017-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.02,Goodwill,0,NA,dfp_cia_aberta_BPA_con_2017.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1,Ativo Total,341714838,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01,Ativo Circulante,59256115,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.01,Caixa e Equivalentes de Caixa,22412547,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02,Aplicações Financeiras,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.01,Títulos para Negociação,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.02,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03,Contas a Receber,11669973,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.01,Clientes,10261067,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.02,Outras Contas a Receber,1408906,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.04,Estoques,17215947,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.05,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06,Tributos a Recuperar,5525300,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06.01,Tributos Correntes a Recuperar,5525300,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.07,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08,Outros Ativos Circulantes,2432348,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03,Outros,2432348,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.01,Instrumentos financeiros derivativos,149270,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.02,Outros,2283078,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02,Ativo Não Circulante,282458723,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01,Ativo Realizável a Longo Prazo,51631830,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01.01,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04,Contas a Receber,589178,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.01,Clientes,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.02,Outras Contas a Receber,589178,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.05,Estoques,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.06,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07,Tributos Diferidos,26767475,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07.01,Imposto de Renda e Contribuição Social Diferidos,26767475,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09,Créditos com Partes Relacionadas,6247965,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.01,Créditos com Coligadas,6247965,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.03,Créditos com Controladores,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.04,Créditos com Outras Partes Relacionadas,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10,Outros Ativos Não Circulantes,18027212,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.03,Instrumentos financeiros derivativos,1520358,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.04,Outros,16506854,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02,Investimentos,12495002,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01,Participações Societárias,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.01,Participações em Coligadas,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.04,Participações em Controladas em Conjunto,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.05,Outros Investimentos,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.02,Propriedades para Investimento,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03,Imobilizado,187481499,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.01,Imobilizado em Operação,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.02,Direito de Uso em Arrendamento,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.03,Imobilizado em Andamento,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04,Intangível,30850392,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01,Intangíveis,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01.01,Contrato de Concessão,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2018-12-31,NA,2018-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.02,Goodwill,0,NA,dfp_cia_aberta_BPA_con_2018.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1,Ativo Total,369670328,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01,Ativo Circulante,68697547,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.01,Caixa e Equivalentes de Caixa,29627092,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02,Aplicações Financeiras,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.01,Títulos para Negociação,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.02,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03,Contas a Receber,11483278,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.01,Clientes,10195059,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.02,Outras Contas a Receber,1288219,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.04,Estoques,17228428,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.05,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06,Tributos a Recuperar,3718722,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06.01,Tributos Correntes a Recuperar,3718722,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.07,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08,Outros Ativos Circulantes,6640027,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.01,Ativos Não-Correntes a Venda,612665,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03,Outros,6027362,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.01,Instrumentos financeiros derivativos,1160408,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.02,Aplicações financeiras de curto prazo,3328893,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.03,Outros,1538061,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02,Ativo Não Circulante,300972781,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01,Ativo Realizável a Longo Prazo,67704779,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01.01,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04,Contas a Receber,349962,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.01,Clientes,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.02,Outras Contas a Receber,349962,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.05,Estoques,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.06,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07,Tributos Diferidos,37151421,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07.01,Imposto de Renda e Contribuição Social Diferidos,37151421,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09,Créditos com Partes Relacionadas,6448928,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.01,Créditos com Coligadas,6448928,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.03,Créditos com Controladores,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.04,Créditos com Outras Partes Relacionadas,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10,Outros Ativos Não Circulantes,23754468,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.03,Instrumentos financeiros derivativos,741701,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.04,Outros,23012767,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02,Investimentos,11277871,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01,Participações Societárias,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.01,Participações em Coligadas,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.04,Participações em Controladas em Conjunto,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.05,Outros Investimentos,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.02,Propriedades para Investimento,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03,Imobilizado,187733155,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.01,Imobilizado em Operação,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.02,Direito de Uso em Arrendamento,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.03,Imobilizado em Andamento,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04,Intangível,34256976,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01,Intangíveis,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01.01,Contrato de Concessão,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2019-12-31,NA,2019-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.02,Goodwill,0,NA,dfp_cia_aberta_BPA_con_2019.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1,Ativo Total,478129515,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01,Ativo Circulante,126805173,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.01,Caixa e Equivalentes de Caixa,70085566,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02,Aplicações Financeiras,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.01,Títulos para Negociação,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.02,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03,Contas a Receber,27233885,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.01,Clientes,25944188,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.02,Outras Contas a Receber,1289697,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.04,Estoques,21102768,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.05,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06,Tributos a Recuperar,2646315,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06.01,Tributos Correntes a Recuperar,2646315,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.07,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08,Outros Ativos Circulantes,5736639,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03,Outros,5736639,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.01,Instrumentos financeiros derivativos,697941,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.02,Aplicações financeiras de curto prazo,4005635,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.03,Outros,1033063,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02,Ativo Não Circulante,351324342,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01,Ativo Realizável a Longo Prazo,78623438,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01.01,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04,Contas a Receber,312452,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.01,Clientes,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.02,Outras Contas a Receber,312452,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.05,Estoques,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.06,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07,Tributos Diferidos,53710608,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07.01,Imposto de Renda e Contribuição Social Diferidos,53710608,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09,Créditos com Partes Relacionadas,4791293,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.01,Créditos com Coligadas,4791293,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.03,Créditos com Controladores,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.04,Créditos com Outras Partes Relacionadas,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10,Outros Ativos Não Circulantes,19809085,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.03,Instrumentos financeiros derivativos,346665,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.04,Outros,19462420,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02,Investimentos,10556640,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01,Participações Societárias,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.01,Participações em Coligadas,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.04,Participações em Controladas em Conjunto,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.05,Outros Investimentos,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.02,Propriedades para Investimento,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03,Imobilizado,213835752,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.01,Imobilizado em Operação,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.02,Direito de Uso em Arrendamento,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.03,Imobilizado em Andamento,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04,Intangível,48308512,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01,Intangíveis,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01.01,Contrato de Concessão,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2020-12-31,NA,2020-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.02,Goodwill,0,NA,dfp_cia_aberta_BPA_con_2020.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1,Ativo Total,499128000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01,Ativo Circulante,124800000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.01,Caixa e Equivalentes de Caixa,65409000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02,Aplicações Financeiras,1028000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,1028000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.01,Títulos para Negociação,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.02,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.03,Aplicações financeiras de curto prazo,1028000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03,Contas a Receber,21840000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.01,Clientes,21840000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.02,Outras Contas a Receber,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.04,Estoques,24429000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.05,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06,Tributos a Recuperar,4809000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06.01,Tributos Correntes a Recuperar,4809000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.07,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08,Outros Ativos Circulantes,7285000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.01,Ativos Não-Correntes a Venda,5468000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03,Outros,1817000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.01,Instrumentos financeiros derivativos,619000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.02,Outros,1198000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.03,Outros,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02,Ativo Não Circulante,374327000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01,Ativo Realizável a Longo Prazo,80275000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01.01,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04,Contas a Receber,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.01,Clientes,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.02,Outras Contas a Receber,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.05,Estoques,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.06,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07,Tributos Diferidos,69067000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07.01,Imposto de Renda e Contribuição Social Diferidos,63847000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07.02,Tributos a Recuperar,5220000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09,Créditos com Partes Relacionadas,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.01,Créditos com Coligadas,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.03,Créditos com Controladores,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.04,Créditos com Outras Partes Relacionadas,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10,Outros Ativos Não Circulantes,11208000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.03,Instrumentos financeiros derivativos,110000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.04,Outros,4290000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.05,Depósito judicial,6808000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02,Investimentos,9771000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01,Participações Societárias,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.01,Participações em Coligadas,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.04,Participações em Controladas em Conjunto,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.05,Outros Investimentos,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.02,Propriedades para Investimento,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03,Imobilizado,233995000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.01,Imobilizado em Operação,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.02,Direito de Uso em Arrendamento,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.03,Imobilizado em Andamento,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04,Intangível,50287000,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01,Intangíveis,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01.01,Contrato de Concessão,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2021-12-31,NA,2021-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.02,Goodwill,0,NA,dfp_cia_aberta_BPA_con_2021.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1,Ativo Total,453387000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01,Ativo Circulante,81009000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.01,Caixa e Equivalentes de Caixa,24711000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02,Aplicações Financeiras,320000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,320000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.01,Títulos para Negociação,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.02,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.03,Aplicações financeiras de curto prazo,320000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03,Contas a Receber,22537000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.01,Clientes,22537000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.02,Outras Contas a Receber,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.04,Estoques,23386000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.05,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06,Tributos a Recuperar,6639000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06.01,Tributos Correntes a Recuperar,6639000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.07,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08,Outros Ativos Circulantes,3416000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03,Outros,3416000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.01,Instrumentos financeiros derivativos,1788000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.02,Outros,1628000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.03,Outros,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02,Ativo Não Circulante,372378000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01,Ativo Realizável a Longo Prazo,75104000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01.01,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04,Contas a Receber,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.01,Clientes,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.02,Outras Contas a Receber,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.05,Estoques,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.06,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07,Tributos Diferidos,61988000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07.01,Imposto de Renda e Contribuição Social Diferidos,56195000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07.02,Tributos a Recuperar,5793000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09,Créditos com Partes Relacionadas,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.01,Créditos com Coligadas,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.03,Créditos com Controladores,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.04,Créditos com Outras Partes Relacionadas,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10,Outros Ativos Não Circulantes,13116000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.03,Instrumentos financeiros derivativos,1022000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.04,Outros,5756000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.05,Depósito judicial,6338000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02,Investimentos,9381000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01,Participações Societárias,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.01,Participações em Coligadas,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.04,Participações em Controladas em Conjunto,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.05,Outros Investimentos,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.02,Propriedades para Investimento,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03,Imobilizado,234472000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.01,Imobilizado em Operação,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.02,Direito de Uso em Arrendamento,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.03,Imobilizado em Andamento,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04,Intangível,53421000,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01,Intangíveis,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01.01,Contrato de Concessão,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2022-12-31,NA,2022-12-31,VALE S.A.,2,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.02,Goodwill,0,NA,dfp_cia_aberta_BPA_con_2022.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1,Ativo Total,455984000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01,Ativo Circulante,90529000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.01,Caixa e Equivalentes de Caixa,17474000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02,Aplicações Financeiras,250000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,250000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.01,Títulos para Negociação,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.02,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.03,Aplicações financeiras de curto prazo,250000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03,Contas a Receber,20317000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.01,Clientes,20317000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.02,Outras Contas a Receber,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.04,Estoques,22679000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.05,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06,Tributos a Recuperar,4355000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06.01,Tributos Correntes a Recuperar,4355000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.07,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08,Outros Ativos Circulantes,25454000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.01,Ativos Não-Correntes a Venda,19041000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03,Outros,6413000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.01,Instrumentos financeiros derivativos,1311000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.02,Outros,2146000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.03,Depósitos judiciais,2956000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02,Ativo Não Circulante,365455000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01,Ativo Realizável a Longo Prazo,65783000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01.01,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04,Contas a Receber,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.01,Clientes,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.02,Outras Contas a Receber,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.05,Estoques,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.06,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07,Tributos Diferidos,52959000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07.01,Imposto de Renda e Contribuição Social Diferidos,46307000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07.02,Tributos a Recuperar,6652000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09,Créditos com Partes Relacionadas,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.01,Créditos com Coligadas,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.03,Créditos com Controladores,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.04,Créditos com Outras Partes Relacionadas,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10,Outros Ativos Não Circulantes,12824000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.03,Instrumentos financeiros derivativos,2635000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.04,Outros,6328000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.05,Depósito judicial,3861000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02,Investimentos,9061000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01,Participações Societárias,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.01,Participações em Coligadas,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.04,Participações em Controladas em Conjunto,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.05,Outros Investimentos,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.02,Propriedades para Investimento,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03,Imobilizado,234302000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.01,Imobilizado em Operação,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.02,Direito de Uso em Arrendamento,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.03,Imobilizado em Andamento,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04,Intangível,56309000,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01,Intangíveis,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01.01,Contrato de Concessão,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2023-12-31,NA,2023-12-31,VALE S.A.,1,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.02,Goodwill,0,NA,dfp_cia_aberta_BPA_con_2023.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1,Ativo Total,496325000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01,Ativo Circulante,83476000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.01,Caixa e Equivalentes de Caixa,30671000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02,Aplicações Financeiras,331000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,331000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.01,Títulos para Negociação,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.02,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.01.03,Aplicações financeiras de curto prazo,331000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.02.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03,Contas a Receber,14600000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.01,Clientes,14600000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.03.02,Outras Contas a Receber,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.04,Estoques,28513000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.05,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06,Tributos a Recuperar,6811000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.06.01,Tributos Correntes a Recuperar,6811000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.07,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08,Outros Ativos Circulantes,2550000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03,Outros,2550000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.01,Instrumentos financeiros derivativos,331000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.02,Outros,2219000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.01.08.03.03,Depósitos judiciais,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02,Ativo Não Circulante,412849000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01,Ativo Realizável a Longo Prazo,71992000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.01.01,Títulos Designados a Valor Justo,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04,Contas a Receber,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.01,Clientes,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.04.02,Outras Contas a Receber,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.05,Estoques,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.06,Ativos Biológicos,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07,Tributos Diferidos,59080000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07.01,Imposto de Renda e Contribuição Social Diferidos,51050000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.07.02,Tributos a Recuperar,8030000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.08,Despesas Antecipadas,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09,Créditos com Partes Relacionadas,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.01,Créditos com Coligadas,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.03,Créditos com Controladores,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.09.04,Créditos com Outras Partes Relacionadas,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10,Outros Ativos Não Circulantes,12912000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.01,Ativos Não-Correntes a Venda,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.02,Ativos de Operações Descontinuadas,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.03,Instrumentos financeiros derivativos,91000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.04,Outros,9495000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.01.10.05,Depósito judicial,3326000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02,Investimentos,28158000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01,Participações Societárias,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.01,Participações em Coligadas,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.04,Participações em Controladas em Conjunto,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.01.05,Outros Investimentos,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.02.02,Propriedades para Investimento,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03,Imobilizado,247594000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.01,Imobilizado em Operação,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.02,Direito de Uso em Arrendamento,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.03.03,Imobilizado em Andamento,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04,Intangível,65105000,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01,Intangíveis,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.01.01,Contrato de Concessão,0,NA,dfp_cia_aberta_BPA_con_2024.csv
+33.592.510/0001-54,4170,2024-12-31,NA,2024-12-31,VALE S.A.,3,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,1.02.04.02,Goodwill,0,NA,dfp_cia_aberta_BPA_con_2024.csv
