@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>IA Aplicada a Finanças: Aula 3 — Prof. André Maranhão</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700&family=Syne:wght@400;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --bg:#020510; --surface:#080f1e;
+    --border:rgba(0,200,255,0.18);
+    --accent:#00C8FF; --accent2:#7B2FFF;
+    --accent3:#00FFB3; --text:#E8F0FF;
+    --muted:#6A7A9A; --card:rgba(8,15,30,0.85);
+    --warn-bg:rgba(255,80,80,0.07);
+    --warn-border:rgba(255,100,100,0.25);
+  }
+  .reveal-viewport { background:var(--bg); }
+  .reveal { font-family:"Inter",sans-serif; font-size:30px; font-weight:300; color:var(--text); }
+  .reveal .slides section { text-align:left; height:100%; padding:2.2rem 2.8rem !important; }
+  .reveal .slides section::before {
+    content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
+    background-image:linear-gradient(rgba(0,200,255,0.04) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(0,200,255,0.04) 1px,transparent 1px);
+    background-size:60px 60px;
+  }
+  .reveal .slides section::after {
+    content:""; position:absolute; width:500px; height:500px; border-radius:50%; z-index:-1;
+    background:radial-gradient(circle,rgba(0,200,255,0.1),transparent 70%);
+    top:-150px; right:-150px; pointer-events:none;
+  }
+  /* TITLE */
+  .slide-title { display:flex !important; flex-direction:column; justify-content:center; }
+  .slide-title::after { background:radial-gradient(circle,rgba(123,47,255,0.18),transparent 70%) !important; top:auto !important; bottom:-200px !important; left:-100px !important; right:auto !important; }
+  .slide-badge { display:inline-flex; align-items:center; gap:0.5rem; font-family:"Space Mono",monospace; font-size:0.58rem; color:var(--accent); border:1px solid var(--accent); padding:0.25rem 0.7rem; border-radius:2px; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:1.5rem; width:fit-content; }
+  .slide-badge::before { content:""; width:5px; height:5px; background:var(--accent); border-radius:50%; animation:blink 2s infinite; }
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+  .slide-title h1 { font-family:"Syne",sans-serif !important; font-size:3.2rem !important; font-weight:800 !important; line-height:1.05 !important; letter-spacing:-0.02em !important; color:var(--text) !important; text-transform:none !important; text-shadow:none !important; margin-bottom:0.5rem !important; border:none !important; }
+  .accent-line { background:linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; display:block; }
+  .slide-title .meta { font-family:"Space Mono",monospace; font-size:0.62rem; color:var(--muted); margin-top:1.5rem; letter-spacing:0.1em; }
+  .slide-title .meta span { color:var(--accent); }
+  /* SECTION BREAK */
+  .slide-section { display:flex !important; flex-direction:column; justify-content:center; }
+  .slide-section .sec-num { font-family:"Space Mono",monospace; font-size:0.58rem; color:var(--accent); letter-spacing:0.2em; text-transform:uppercase; margin-bottom:0.8rem; }
+  .slide-section h2 { font-family:"Syne",sans-serif !important; font-size:3rem !important; font-weight:800 !important; line-height:1.1 !important; color:var(--text) !important; text-transform:none !important; text-shadow:none !important; border:none !important; margin:0 !important; }
+  .slide-section h2 em { background:linear-gradient(90deg,var(--accent),var(--accent3)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; font-style:normal; }
+  .accent-bar { width:60px; height:3px; background:linear-gradient(90deg,var(--accent),var(--accent2)); margin-top:1.5rem; border-radius:2px; }
+  /* CONTENT */
+  .slide-label { font-family:"Space Mono",monospace; font-size:0.52rem; color:var(--accent); letter-spacing:0.2em; text-transform:uppercase; margin-bottom:0.35rem; }
+  .reveal .slides section h2 { font-family:"Syne",sans-serif !important; font-size:1.45rem !important; font-weight:700 !important; color:var(--text) !important; text-transform:none !important; text-shadow:none !important; border:none !important; margin:0 0 0.25rem 0 !important; letter-spacing:-0.01em !important; line-height:1.2 !important; }
+  .h-line { width:100%; height:1px; background:linear-gradient(90deg,var(--accent),transparent); margin:0.5rem 0 1rem; opacity:0.3; }
+  /* LISTS */
+  .reveal ul { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.55rem; }
+  .reveal ul li { font-size:0.84rem; color:#b0c0d8; display:flex; align-items:flex-start; gap:0.6rem; line-height:1.5; }
+  .reveal ul li::before { content:"→"; color:var(--accent); font-family:"Space Mono",monospace; font-size:0.75rem; flex-shrink:0; margin-top:0.05rem; }
+  .reveal ul li strong { color:var(--text); font-weight:500; }
+  /* GRIDS */
+  .g2 { display:grid; grid-template-columns:1fr 1fr; gap:0.9rem; margin-top:0.5rem; }
+  .g3 { display:grid; grid-template-columns:repeat(3,1fr); gap:0.9rem; margin-top:0.5rem; }
+  .g4 { display:grid; grid-template-columns:repeat(4,1fr); gap:0.7rem; margin-top:0.5rem; }
+  /* CARDS */
+  .card { background:var(--card); border:1px solid var(--border); border-radius:6px; padding:0.9rem 1.1rem; backdrop-filter:blur(10px); position:relative; overflow:hidden; }
+  .card::before { content:""; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+  .card.gr::before { background:linear-gradient(90deg,var(--accent3),var(--accent)); }
+  .card.pu::before { background:linear-gradient(90deg,var(--accent2),#ff6eb4); }
+  .card.or::before { background:linear-gradient(90deg,#ffb347,#ff6eb4); }
+  .card.re::before { background:linear-gradient(90deg,#ff5050,#ff8080); }
+  .cl { font-family:"Space Mono",monospace; font-size:0.55rem; color:var(--accent); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.4rem; }
+  .card.gr .cl { color:var(--accent3); }
+  .card.pu .cl { color:#c0a0ff; }
+  .card.or .cl { color:#ffb347; }
+  .card.re .cl { color:#ff8080; }
+  .card p { font-size:0.76rem !important; color:#8a9ab8; line-height:1.5; margin:0; }
+  .card h4 { font-family:"Syne",sans-serif; font-size:0.92rem; font-weight:700; color:var(--text); margin:0 0 0.35rem; }
+  /* QUOTE */
+  .quote { background:var(--card); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:4px; padding:1rem 1.3rem; font-size:0.82rem; color:#9ab0cc; font-style:italic; line-height:1.65; margin-top:0.5rem; }
+  .quote.pu { border-left-color:var(--accent2); }
+  .quote.gr { border-left-color:var(--accent3); }
+  .qa { display:block; margin-top:0.6rem; font-style:normal; font-family:"Space Mono",monospace; font-size:0.52rem; color:var(--accent); letter-spacing:0.1em; }
+  /* BOXES */
+  .hl { background:rgba(0,200,255,0.06); border:1px solid rgba(0,200,255,0.25); border-radius:6px; padding:0.8rem 1.1rem; font-size:0.79rem; color:#a0d0e8; line-height:1.5; margin-top:0.7rem; }
+  .hl .hll { font-family:"Space Mono",monospace; font-size:0.5rem; color:var(--accent); letter-spacing:0.15em; text-transform:uppercase; margin-bottom:0.25rem; }
+  .wn { background:var(--warn-bg); border:1px solid var(--warn-border); border-radius:6px; padding:0.8rem 1.1rem; font-size:0.79rem; color:#ffaaaa; line-height:1.5; margin-top:0.7rem; }
+  .wn .wl { font-family:"Space Mono",monospace; font-size:0.5rem; color:#ff8080; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:0.25rem; }
+  .cu { background:rgba(0,255,179,0.05); border:1px solid rgba(0,255,179,0.22); border-radius:6px; padding:0.8rem 1.1rem; font-size:0.79rem; color:#90e8c8; line-height:1.5; margin-top:0.7rem; }
+  .cu .cul { font-family:"Space Mono",monospace; font-size:0.5rem; color:var(--accent3); letter-spacing:0.15em; text-transform:uppercase; margin-bottom:0.25rem; }
+  /* CODE */
+  .code { background:#010812; border:1px solid var(--border); border-radius:6px; padding:0.9rem 1.2rem; font-family:"Space Mono",monospace; font-size:0.68rem; line-height:1.7; margin-top:0.5rem; position:relative; overflow:hidden; }
+  .code::before { content:""; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--accent3),var(--accent)); }
+  .cl2 { font-family:"Space Mono",monospace; font-size:0.48rem; color:var(--muted); letter-spacing:0.15em; text-transform:uppercase; margin-bottom:0.4rem; }
+  .cc{color:#4A6A5A} .ck{color:#C792EA} .cs{color:#C3E88D} .cf{color:#82AAFF} .cn{color:#F78C6C} .cv{color:var(--accent3)}
+  /* FORMULA */
+  .fm { background:var(--card); border:1px solid var(--border); border-radius:6px; padding:0.7rem 1.2rem; text-align:center; font-family:"Space Mono",monospace; font-size:0.8rem; color:var(--accent3); margin:0.7rem 0; letter-spacing:0.05em; }
+  /* TABLES */
+  .tbl { width:100%; border-collapse:collapse; font-size:0.72rem; margin-top:0.4rem; }
+  .tbl th { font-family:"Space Mono",monospace; font-size:0.55rem; letter-spacing:0.08em; text-transform:uppercase; padding:0.3rem 0.5rem; border-bottom:1px solid var(--border); font-weight:400; }
+  .tbl td { padding:0.28rem 0.5rem; color:#9ab0cc; border-bottom:1px solid rgba(0,200,255,0.05); vertical-align:middle; }
+  .tbl tr:last-child td { border-bottom:none; }
+  .tbl .tot td { border-top:1px solid var(--border); color:var(--text); font-weight:600; }
+  /* PROGRESS + CONTROLS */
+  .reveal .progress { background:rgba(0,200,255,0.1); height:3px; }
+  .reveal .progress span { background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+  .reveal .slide-number { font-family:"Space Mono",monospace; font-size:0.52rem; color:var(--muted); background:transparent; right:1.4rem; bottom:0.9rem; }
+  .reveal .controls { color:var(--accent); }
+  /* FRAGMENTS */
+  .reveal .fragment { opacity:0; transform:translateY(8px); transition:all 0.3s ease; }
+  .reveal .fragment.visible { opacity:1; transform:translateY(0); }
+  /* IMG */
+  .img-s { width:100%; border-radius:6px; border:1px solid var(--border); box-shadow:0 4px 30px rgba(0,0,0,0.4); }
+  /* PROMPT */
+  .prompt { background:#010812; border:1px solid rgba(0,255,179,0.35); border-radius:6px; padding:0.9rem 1.2rem; font-size:0.73rem; color:#90e8c8; line-height:1.65; margin-top:0.5rem; position:relative; }
+  .prompt::before { content:""; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--accent3),var(--accent)); }
+  .pl { font-family:"Space Mono",monospace; font-size:0.48rem; color:var(--accent3); letter-spacing:0.15em; text-transform:uppercase; margin-bottom:0.4rem; }
+  /* BUILD TABLE */
+  .build-tbl { width:100%; border-collapse:collapse; font-size:0.68rem; }
+  .build-tbl th { font-family:"Space Mono",monospace; font-size:0.52rem; padding:0.35rem 0.5rem; border-bottom:2px solid var(--border); letter-spacing:0.08em; text-transform:uppercase; font-weight:400; }
+  .build-tbl td { padding:0.3rem 0.5rem; border-bottom:1px solid rgba(0,200,255,0.05); }
+  .build-tbl .done { color:var(--accent3); }
+  .build-tbl .todo { color:rgba(106,122,154,0.5); font-style:italic; }
+  .build-tbl .company { color:var(--text); font-family:"Space Mono",monospace; font-size:0.65rem; font-weight:700; }
+  /* BIG NUMBER */
+  .bnum { font-family:"Syne",sans-serif; font-size:2.8rem; font-weight:800; background:linear-gradient(90deg,var(--accent),var(--accent3)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; line-height:1; }
+  .blab { font-family:"Space Mono",monospace; font-size:0.58rem; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase; margin-top:0.2rem; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- ═══ SLIDE 1: CAPA ═══ -->
+<section class="slide-title">
+  <div class="slide-badge">SBFin · Escola de Finanças · Maio 2026</div>
+  <h1>IA Aplicada<br/><span class="accent-line">a Finanças · Aula 3</span></h1>
+  <p style="font-size:0.76rem;color:#6a8ab0;max-width:560px;margin:1rem 0;line-height:1.6;">
+    Agentes, Skills e MCP — automatizando o pipeline completo das três empresas e fechando o curso com o estado da arte em IA aplicada.
+  </p>
+  <div class="meta">
+    <span>Prof.</span> André Nunes Maranhão &nbsp;·&nbsp;
+    <span>FGV-EESP · FEA-USP</span> &nbsp;·&nbsp;
+    <span>Aula 03 de 03</span>
+  </div>
+</section>
+
+<!-- ═══ SLIDE 2: O QUE CONSTRUÍMOS ═══ -->
+<section>
+  <div class="slide-label">// recapitulação · pipeline completo</div>
+  <h2>O que Construímos — Pipeline das 3 Aulas</h2>
+  <div class="h-line"></div>
+  <div class="g3 fragment">
+    <div class="card">
+      <div class="cl">// Aula 1 ✓</div>
+      <h4>Dados e Fundamentos</h4>
+      <p>LLMs, Transformers, Cursor. PETR4, VALE3, ITUB4 — preços, retorno acumulado, volatilidade, Sharpe.</p>
+    </div>
+    <div class="card pu">
+      <div class="cl">// Aula 2 ✓</div>
+      <h4>Análise e Valuation</h4>
+      <p>GetDFPData2, ROE, margem, LPA. Random Forest para crescimento. DCF e valor intrínseco.</p>
+    </div>
+    <div class="card gr">
+      <div class="cl">// Aula 3 → Hoje</div>
+      <h4>Agentes e Automação</h4>
+      <p>Agentes que executam todo o pipeline sozinhos. Skills reutilizáveis. Notícias. MCP.</p>
+    </div>
+  </div>
+  <div class="hl fragment" style="margin-top:0.8rem;">
+    <div class="hll">✦ A evolução do curso</div>
+    Aula 1: você escreve o prompt. Aula 2: você escreve o código com IA. Aula 3: você <strong style="color:var(--text);">descreve o objetivo</strong> — o agente decide como executar.
+  </div>
+</section>
+
+<!-- ═══ SLIDE 3: ROTEIRO ═══ -->
+<section>
+  <div class="slide-label">// roteiro · aula 3</div>
+  <h2>Roteiro de Hoje</h2>
+  <div class="h-line"></div>
+  <div class="g2 fragment">
+    <div class="card">
+      <div class="cl">// Parte 1 · Conceitos</div>
+      <ul style="gap:0.35rem;">
+        <li>O que são Agentes de IA</li>
+        <li>Skills — prompts reutilizáveis</li>
+        <li>AGENTS.md — instruções permanentes</li>
+        <li>Orquestração e memória</li>
+        <li>Cursor Agent vs código Python</li>
+      </ul>
+    </div>
+    <div class="card gr">
+      <div class="cl">// Parte 2 · Ao Vivo</div>
+      <ul style="gap:0.35rem;">
+        <li>Agente simples — implementar na hora</li>
+        <li>Agente reproduzindo a Aula 2</li>
+        <li>Agente por empresa + notícias (yfinance)</li>
+        <li>Agentes Claude para finanças</li>
+        <li>MCP — conceito e exemplo prático</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cu fragment" style="margin-top:0.7rem;">
+    <div class="cul">⊹ Premissa</div>
+    Você não precisa saber programar para usar agentes. Precisa saber <strong style="color:var(--text);">descrever bem o que quer</strong> — a skill mais importante da era da IA.
+  </div>
+</section>
+
+<!-- ═══ SECTION: CONCEITOS ═══ -->
+<section class="slide-section">
+  <div class="sec-num">// 01 — Conceitos</div>
+  <h2>Agentes,<br/><em>Skills e Memória</em></h2>
+  <div class="accent-bar"></div>
+</section>
+
+<!-- ═══ SLIDE 4: O QUE É UM AGENTE ═══ -->
+<section>
+  <div class="slide-label">// conceitos · o que é um agente</div>
+  <h2>O que é um Agente de IA?</h2>
+  <div class="h-line"></div>
+  <div class="g2">
+    <div>
+      <ul>
+        <li class="fragment"><strong>Definição:</strong> sistema que recebe um <em>objetivo</em> e decide autonomamente quais ferramentas usar, em que ordem, para atingi-lo</li>
+        <li class="fragment"><strong>Diferença do chat:</strong> no chat você dá os passos. No agente você dá o destino</li>
+        <li class="fragment"><strong>Loop básico:</strong> Perceber → Planejar → Agir → Observar resultado → Repetir</li>
+        <li class="fragment"><strong>Ferramentas típicas:</strong> executar código, ler arquivos, acessar APIs, navegar na web, escrever relatórios</li>
+        <li class="fragment"><strong>Hoje (2026):</strong> Cursor Agent, Claude Code, GitHub Copilot Agent, ChatGPT Operator</li>
+      </ul>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.7rem;">
+      <div class="card fragment">
+        <div class="cl">// Chat vs Agente</div>
+        <table class="tbl" style="margin-top:0.3rem;">
+          <tr><th style="color:var(--muted);text-align:left;">Chat</th><th style="color:var(--accent3);text-align:left;">Agente</th></tr>
+          <tr><td style="color:#b0c0d8;">Você dá os passos</td><td style="color:#b0c0d8;">Você dá o objetivo</td></tr>
+          <tr><td style="color:#b0c0d8;">Uma resposta de texto</td><td style="color:#b0c0d8;">Pipeline de ações</td></tr>
+          <tr><td style="color:#b0c0d8;">Sem memória</td><td style="color:#b0c0d8;">Contexto persistente</td></tr>
+          <tr><td style="color:#b0c0d8;">Sem execução</td><td style="color:#b0c0d8;">Executa código e APIs</td></tr>
+          <tr><td style="color:#b0c0d8;">Você valida tudo</td><td style="color:#b0c0d8;">Ele valida parcialmente</td></tr>
+        </table>
+      </div>
+      <div class="cu fragment">
+        <div class="cul">⊹ Analogia financeira</div>
+        Chat = analista que responde quando você pergunta. Agente = analista que recebe a carteira, define o processo e entrega o relatório — você só aprova no final.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SLIDE 5: SKILLS ═══ -->
+<section>
+  <div class="slide-label">// conceitos · skills</div>
+  <h2>Skills — Prompts que Você Usa Todo Dia</h2>
+  <div class="h-line"></div>
+  <div class="g2">
+    <div>
+      <ul>
+        <li class="fragment"><strong>Skill:</strong> prompt reutilizável para uma tarefa recorrente — como uma macro no Excel, mas para IA</li>
+        <li class="fragment"><strong>Formato:</strong> arquivo de texto com instruções fixas + variáveis entre chaves <code style="font-family:'Space Mono',monospace;color:var(--accent3);font-size:0.8rem;">{ticker}</code></li>
+        <li class="fragment"><strong>Onde usar:</strong> Claude Projects, AGENTS.md, scripts Python, Cursor</li>
+        <li class="fragment"><strong>Regra de ouro:</strong> se você digitou o mesmo prompt mais de duas vezes, transforme em skill</li>
+      </ul>
+      <div class="cu fragment" style="margin-top:0.7rem;">
+        <div class="cul">⊹ Pergunta para vocês</div>
+        Qual prompt você digitou mais de <strong style="color:var(--text);">duas vezes</strong> este mês? Esse é o candidato a skill.
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+      <div class="card gr fragment">
+        <div class="cl">// Exemplo · skill_analise_acao.md</div>
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:0.6rem 0.8rem;margin-top:0.4rem;font-family:'Space Mono',monospace;font-size:0.6rem;color:#8a9ab8;line-height:1.7;">
+          # skill_analise_acao.md<br/>
+          Você é analista financeiro sênior.<br/>
+          Analise a ação <span style="color:var(--accent3);">{ticker}</span> com base nos<br/>
+          dados fornecidos abaixo.<br/><br/>
+          Calcule: ROE, margem líquida, dívida/PL.<br/>
+          Compare com a mediana do setor <span style="color:var(--accent3);">{setor}</span>.<br/>
+          Identifique 3 riscos e 3 oportunidades.<br/>
+          Não faça recomendação de compra/venda.
+        </div>
+      </div>
+      <div class="card pu fragment">
+        <div class="cl">// Como invocar no Python</div>
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:0.6rem 0.8rem;margin-top:0.4rem;font-family:'Space Mono',monospace;font-size:0.6rem;color:#8a9ab8;line-height:1.7;">
+          skill = open("skill_analise_acao.md").read()<br/>
+          prompt = skill.format(<br/>
+          &nbsp;&nbsp;ticker="PETR4",<br/>
+          &nbsp;&nbsp;setor="Energia"<br/>
+          )<br/>
+          # Envia para o modelo com os dados
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SLIDE 6: AGENTS.MD ═══ -->
+<section>
+  <div class="slide-label">// conceitos · agents.md e memória</div>
+  <h2>AGENTS.md — Sua IA Personalizada</h2>
+  <div class="h-line"></div>
+  <div class="g2">
+    <div>
+      <ul>
+        <li class="fragment"><strong>AGENTS.md:</strong> arquivo de texto com regras permanentes que o agente segue em toda execução</li>
+        <li class="fragment"><strong>Onde fica:</strong> na raiz da pasta do projeto — o Cursor e Claude Code o leem automaticamente</li>
+        <li class="fragment"><strong>Memória de sessão:</strong> o agente lembra o que fez dentro da mesma conversa</li>
+        <li class="fragment"><strong>Memória persistente:</strong> Claude Projects permite manter contexto entre sessões</li>
+        <li class="fragment"><strong>Limitação real:</strong> agentes não têm memória entre sessões por padrão — AGENTS.md compensa isso</li>
+      </ul>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+      <div class="card fragment">
+        <div class="cl">// Exemplo · AGENTS.md para finanças</div>
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:0.7rem 0.9rem;margin-top:0.4rem;font-family:'Space Mono',monospace;font-size:0.6rem;color:#8a9ab8;line-height:1.8;">
+          # AGENTS.md<br/><br/>
+          ## Identidade<br/>
+          Você é analista financeiro sênior.<br/>
+          Foco: PETR4, VALE3, ITUB4.<br/><br/>
+          ## Regras<br/>
+          - Nunca recomende compra ou venda<br/>
+          - Sempre cite a fonte dos dados<br/>
+          - Salve resultados em /resultados/<br/>
+          - Use dados_cvm/ como backup<br/>
+          - Diga quando os dados forem insuficientes<br/><br/>
+          ## Skills disponíveis<br/>
+          - skill_analise_acao.md<br/>
+          - skill_noticias.md<br/>
+          - skill_valuation.md
+        </div>
+      </div>
+      <div class="hl fragment">
+        <div class="hll">✦ As 3 perguntas para o seu AGENTS.md</div>
+        1. Qual é o seu papel?<br/>
+        2. O que você nunca deve fazer?<br/>
+        3. Onde salvar os resultados?
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SLIDE 7: ORQUESTRAÇÃO ═══ -->
+<section>
+  <div class="slide-label">// conceitos · orquestração</div>
+  <h2>Orquestração — Agentes Trabalhando Juntos</h2>
+  <div class="h-line"></div>
+  <div class="g2">
+    <div>
+      <ul>
+        <li class="fragment"><strong>Orquestrador:</strong> agente que recebe o objetivo e distribui tarefas para sub-agentes especializados</li>
+        <li class="fragment"><strong>Sub-agentes:</strong> cada um especialista em uma coisa — coleta, análise, relatório</li>
+        <li class="fragment"><strong>Comunicação:</strong> via arquivos JSON, variáveis de ambiente ou passagem direta de contexto</li>
+        <li class="fragment"><strong>Cuidado:</strong> erros em cascata — se o agente de coleta falha, os demais falham também</li>
+      </ul>
+      <div class="wn fragment" style="margin-top:0.7rem;">
+        <div class="wl">⚠ Regra de ouro para agentes</div>
+        Comece pequeno. Automatize uma tarefa de <strong style="color:var(--text);">baixo risco</strong> por 2 semanas. Valide os resultados. Só então expanda. Nunca automatize o que você não entende manualmente.
+      </div>
+    </div>
+    <div class="card gr fragment" style="align-self:start;">
+      <div class="cl">// Pipeline de hoje — orquestrado</div>
+      <div style="font-family:'Space Mono',monospace;font-size:0.65rem;color:#8a9ab8;line-height:2;">
+        <span style="color:var(--accent);">Você</span> → dá o objetivo<br/>
+        &nbsp;&nbsp;↓<br/>
+        <span style="color:#ffb347;">Orquestrador</span> → planeja as etapas<br/>
+        &nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br/>
+        <span style="color:var(--accent3);">Agente 1</span>&nbsp;&nbsp;&nbsp;<span style="color:#c0a0ff;">Agente 2</span>&nbsp;&nbsp;&nbsp;<span style="color:#ff8080;">Agente 3</span><br/>
+        <span style="color:var(--accent3);">Coleta CVM</span>&nbsp;&nbsp;<span style="color:#c0a0ff;">Análise RF</span>&nbsp;&nbsp;<span style="color:#ff8080;">Notícias</span><br/>
+        &nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br/>
+        <span style="color:var(--accent);">Relatório final integrado</span><br/>
+        &nbsp;&nbsp;↓<br/>
+        <span style="color:var(--accent);">Você</span> → valida e decide
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SECTION: AGENTE SIMPLES ═══ -->
+<section class="slide-section">
+  <div class="sec-num">// 02 — Ao Vivo</div>
+  <h2>Agente Simples —<br/><em>Implementar Agora</em></h2>
+  <div class="accent-bar"></div>
+</section>
+
+<!-- ═══ SLIDE 8: AGENTE SIMPLES — CONCEITO ═══ -->
+<section>
+  <div class="slide-label">// ao vivo · agente simples · cursor agent</div>
+  <h2>Passo 1 — Agente Simples no Cursor</h2>
+  <div class="h-line"></div>
+  <p style="font-size:0.78rem;color:#8a9ab8;margin-bottom:0.6rem;" class="fragment">
+    Vamos criar um agente que, dado um ticker, busca o preço atual, calcula a variação da semana e escreve um resumo. <strong style="color:var(--text);">Faça junto!</strong>
+  </p>
+  <div class="g2">
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+      <div class="card fragment">
+        <div class="cl">// Passo a passo no Cursor</div>
+        <ul style="gap:0.3rem;">
+          <li style="font-size:0.75rem;"><strong>1.</strong> Abra o Cursor na pasta do projeto</li>
+          <li style="font-size:0.75rem;"><strong>2.</strong> Clique em <strong>Agent</strong> (canto inferior do chat)</li>
+          <li style="font-size:0.75rem;"><strong>3.</strong> Cole o prompt ao lado</li>
+          <li style="font-size:0.75rem;"><strong>4.</strong> Pressione Enter — observe o agente planejar e executar</li>
+          <li style="font-size:0.75rem;"><strong>5.</strong> Aceite ou rejeite cada ação proposta</li>
+        </ul>
+      </div>
+      <div class="wn fragment">
+        <div class="wl">⚠ Modo Agent vs Chat</div>
+        No modo <strong style="color:var(--text);">Agent</strong>, o Cursor pode criar arquivos, executar código e fazer múltiplas ações. No modo Chat, só conversa. Certifique-se de estar no modo certo!
+      </div>
+    </div>
+    <div class="prompt fragment">
+      <div class="pl">// Prompt · Agente Simples</div>
+      Crie um script Python chamado <code style="color:var(--accent3);">agente_preco.py</code> que:<br/><br/>
+      1. Baixe o preço atual e histórico de 5 dias de PETR4.SA usando yfinance<br/>
+      2. Calcule a variação percentual da semana<br/>
+      3. Classifique como Alta, Queda ou Estável (variação &lt; 1%)<br/>
+      4. Imprima um resumo formatado no console<br/>
+      5. Salve o resultado em <code style="color:var(--accent3);">resultado_preco.txt</code><br/><br/>
+      Execute o script após criá-lo e mostre o resultado.
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SLIDE 9: AGENTE SIMPLES — CÓDIGO GERADO ═══ -->
+<section>
+  <div class="slide-label">// ao vivo · agente simples · código python</div>
+  <h2>O Código que o Agente Gera</h2>
+  <div class="h-line"></div>
+  <p style="font-size:0.75rem;color:#8a9ab8;margin-bottom:0.4rem;" class="fragment">
+    O Cursor vai gerar algo parecido com isso — e executar automaticamente:
+  </p>
+  <div class="code fragment" style="font-size:0.64rem;">
+    <div class="cl2">// python · agente_preco.py · gerado pelo cursor</div>
+    <span class="cc"># Agente gerado pelo Cursor — IA Aplicada a Finanças · SBFin 2026</span><br/>
+    <span class="ck">import</span> <span class="cv">yfinance</span> <span class="ck">as</span> <span class="cv">yf</span><br/>
+    <span class="ck">from</span> <span class="cv">datetime</span> <span class="ck">import</span> <span class="cv">datetime</span><br/><br/>
+    <span class="ck">def</span> <span class="cf">analisar_acao</span>(<span class="cv">ticker</span>: <span class="cv">str</span>) -&gt; <span class="cv">dict</span>:<br/>
+    &nbsp;&nbsp;<span class="cc"># Baixar dados</span><br/>
+    &nbsp;&nbsp;<span class="cv">acao</span> = <span class="cv">yf</span>.<span class="cf">Ticker</span>(<span class="cv">ticker</span>)<br/>
+    &nbsp;&nbsp;<span class="cv">hist</span> = <span class="cv">acao</span>.<span class="cf">history</span>(period=<span class="cs">"5d"</span>)<br/>
+    &nbsp;&nbsp;<span class="cv">preco_atual</span>  = <span class="cv">hist</span>[<span class="cs">"Close"</span>].<span class="cf">iloc</span>[-<span class="cn">1</span>]<br/>
+    &nbsp;&nbsp;<span class="cv">preco_inicio</span> = <span class="cv">hist</span>[<span class="cs">"Close"</span>].<span class="cf">iloc</span>[<span class="cn">0</span>]<br/>
+    &nbsp;&nbsp;<span class="cv">variacao</span>     = (<span class="cv">preco_atual</span> - <span class="cv">preco_inicio</span>) / <span class="cv">preco_inicio</span> * <span class="cn">100</span><br/><br/>
+    &nbsp;&nbsp;<span class="cc"># Classificar</span><br/>
+    &nbsp;&nbsp;<span class="ck">if</span> <span class="cv">variacao</span> &gt; <span class="cn">1</span>: <span class="cv">sinal</span> = <span class="cs">"📈 ALTA"</span><br/>
+    &nbsp;&nbsp;<span class="ck">elif</span> <span class="cv">variacao</span> &lt; -<span class="cn">1</span>: <span class="cv">sinal</span> = <span class="cs">"📉 QUEDA"</span><br/>
+    &nbsp;&nbsp;<span class="ck">else</span>: <span class="cv">sinal</span> = <span class="cs">"➡ ESTÁVEL"</span><br/><br/>
+    &nbsp;&nbsp;<span class="ck">return</span> {<span class="cs">"ticker"</span>: <span class="cv">ticker</span>, <span class="cs">"preco"</span>: <span class="cv">preco_atual</span>,<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"variacao_pct"</span>: <span class="cv">variacao</span>, <span class="cs">"sinal"</span>: <span class="cv">sinal</span>}<br/><br/>
+    <span class="cc"># Executar para as 3 empresas</span><br/>
+    <span class="ck">for</span> <span class="cv">t</span> <span class="ck">in</span> [<span class="cs">"PETR4.SA"</span>, <span class="cs">"VALE3.SA"</span>, <span class="cs">"ITUB4.SA"</span>]:<br/>
+    &nbsp;&nbsp;<span class="cv">r</span> = <span class="cf">analisar_acao</span>(<span class="cv">t</span>)<br/>
+    &nbsp;&nbsp;<span class="cf">print</span>(<span class="cs">f"{r['sinal']} {r['ticker']}: R$ {r['preco']:.2f} ({r['variacao_pct']:+.1f}%)"</span>)
+  </div>
+  <div class="hl fragment" style="margin-top:0.5rem;">
+    <div class="hll">✦ O que acabou de acontecer</div>
+    Você descreveu o objetivo em português. O agente <strong style="color:var(--text);">criou o arquivo, escreveu o código, executou e mostrou o resultado</strong> — sem você digitar uma linha de código.
+  </div>
+</section>
+
+<!-- ═══ SECTION: AGENTE AULA 2 ═══ -->
+<section class="slide-section">
+  <div class="sec-num">// 03 — Agente Completo</div>
+  <h2>Reproduzindo<br/><em>a Análise da Aula 2</em></h2>
+  <div class="accent-bar"></div>
+</section>
+
+<!-- ═══ SLIDE 10: CURSOR AGENT AO VIVO ═══ -->
+<section>
+  <div class="slide-label">// agente · cursor agent · aula 2 completa</div>
+  <h2>Cursor Agent — Reproduzindo a Aula 2</h2>
+  <div class="h-line"></div>
+  <p style="font-size:0.76rem;color:#8a9ab8;margin-bottom:0.5rem;" class="fragment">
+    Agora o agente faz tudo que levamos uma aula inteira para construir. Modo Agent no Cursor → cole:
+  </p>
+  <div class="prompt fragment">
+    <div class="pl">// Prompt · Agente Aula 2 Completo · Cursor Agent</div>
+    Os dados das empresas já estão em <code style="color:var(--accent3);">dados_cvm/</code> como arquivos RDS.<br/><br/>
+    Execute as seguintes etapas em sequência:<br/>
+    <strong style="color:var(--text);">1.</strong> Carregue os RDS de PETR4, VALE3 e ITUB4<br/>
+    <strong style="color:var(--text);">2.</strong> Calcule ROE, margem líquida, dívida/PL, LPA e crescimento de receita para cada empresa<br/>
+    <strong style="color:var(--text);">3.</strong> Treine um Random Forest para prever se LPA crescerá mais de 10%<br/>
+    <strong style="color:var(--text);">4.</strong> Calcule o valor intrínseco via Gordon usando Ke do CAPM (SELIC=11,75%, beta via regressão)<br/>
+    <strong style="color:var(--text);">5.</strong> Gere uma tabela comparativa com: preço atual, valor contábil, valor intrínseco, sinal RF e sinal final<br/>
+    <strong style="color:var(--text);">6.</strong> Salve a tabela como <code style="color:var(--accent3);">resultado_agente_aula2.csv</code><br/><br/>
+    Use R. Não faça recomendação de compra ou venda.
+  </div>
+  <div class="cu fragment" style="margin-top:0.6rem;">
+    <div class="cul">⊹ Diferença pedagógica central</div>
+    Na Aula 2 levamos <strong style="color:var(--text);">1 hora</strong> construindo isso passo a passo. O agente faz em <strong style="color:var(--text);">2 minutos</strong>. A aula 2 foi necessária para você <em>entender</em> — o agente é necessário para você <em>escalar</em>.
+  </div>
+</section>
+
+<!-- ═══ SLIDE 11: CÓDIGO PYTHON GERADO ═══ -->
+<section>
+  <div class="slide-label">// agente · código python · gerado com ia</div>
+  <h2>Gerando o Mesmo Agente em Python</h2>
+  <div class="h-line"></div>
+  <p style="font-size:0.75rem;color:#8a9ab8;margin-bottom:0.4rem;" class="fragment">
+    Peça ao Cursor: <em style="color:#c0b0ff;">"Converta o pipeline da Aula 2 para Python usando pyarrow para ler os RDS e scikit-learn para o Random Forest. Gere o arquivo <code>agente_aula2.py</code> completo com comentários em português."</em>
+  </p>
+  <div class="code fragment" style="font-size:0.61rem;">
+    <div class="cl2">// python · agente_aula2.py · gerado pelo cursor</div>
+    <span class="cc"># IA Aplicada a Finanças — Agente Pipeline Completo</span><br/>
+    <span class="ck">import</span> <span class="cv">pandas</span> <span class="ck">as</span> <span class="cv">pd</span>, <span class="cv">yfinance</span> <span class="ck">as</span> <span class="cv">yf</span><br/>
+    <span class="ck">from</span> <span class="cv">sklearn.ensemble</span> <span class="ck">import</span> <span class="cv">RandomForestClassifier</span><br/>
+    <span class="ck">import</span> <span class="cv">pyreadr</span>  <span class="cc"># lê arquivos RDS do R</span><br/><br/>
+    <span class="cc"># 1. Carregar dados da CVM</span><br/>
+    <span class="ck">def</span> <span class="cf">carregar_rds</span>(<span class="cv">ticker</span>):<br/>
+    &nbsp;&nbsp;<span class="cv">path</span> = <span class="cs">f"dados_cvm/{ticker}_completo.rds"</span><br/>
+    &nbsp;&nbsp;<span class="ck">return</span> <span class="cv">pyreadr</span>.<span class="cf">read_r</span>(<span class="cv">path</span>)<br/><br/>
+    <span class="cc"># 2. Feature engineering</span><br/>
+    <span class="ck">def</span> <span class="cf">calcular_indicadores</span>(<span class="cv">dados</span>, <span class="cv">ticker</span>):<br/>
+    &nbsp;&nbsp;<span class="cv">dre</span> = <span class="cv">dados</span>[<span class="cs">"DRE"</span>]<br/>
+    &nbsp;&nbsp;<span class="cv">receita</span> = <span class="cv">dre</span>[<span class="cv">dre</span>[<span class="cs">"CD_CONTA"</span>]==<span class="cs">"3.01"</span>][<span class="cs">"VL_CONTA"</span>]<br/>
+    &nbsp;&nbsp;<span class="cv">lucro</span>   = <span class="cv">dre</span>[<span class="cv">dre</span>[<span class="cs">"CD_CONTA"</span>]==<span class="cs">"3.11"</span>][<span class="cs">"VL_CONTA"</span>]<br/>
+    &nbsp;&nbsp;<span class="cv">pl</span>      = <span class="cv">dados</span>[<span class="cs">"BPP"</span>][<span class="cv">dados</span>[<span class="cs">"BPP"</span>][<span class="cs">"CD_CONTA"</span>]==<span class="cs">"2.03"</span>][<span class="cs">"VL_CONTA"</span>]<br/>
+    &nbsp;&nbsp;<span class="ck">return</span> <span class="cv">pd</span>.<span class="cf">DataFrame</span>({<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"ticker"</span>: <span class="cv">ticker</span>, <span class="cs">"roe"</span>: <span class="cv">lucro</span>/<span class="cv">pl</span>,<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"margem"</span>: <span class="cv">lucro</span>/<span class="cv">receita</span><br/>
+    &nbsp;&nbsp;})<br/><br/>
+    <span class="cc"># 3. Executar para as 3 empresas</span><br/>
+    <span class="ck">for</span> <span class="cv">t</span> <span class="ck">in</span> [<span class="cs">"PETR4"</span>, <span class="cs">"VALE3"</span>, <span class="cs">"ITUB4"</span>]:<br/>
+    &nbsp;&nbsp;<span class="cv">dados</span> = <span class="cf">carregar_rds</span>(<span class="cv">t</span>)<br/>
+    &nbsp;&nbsp;<span class="cv">df</span> = <span class="cf">calcular_indicadores</span>(<span class="cv">dados</span>, <span class="cv">t</span>)<br/>
+    &nbsp;&nbsp;<span class="cf">print</span>(<span class="cv">df</span>)
+  </div>
+</section>
+
+<!-- ═══ SECTION: NOTÍCIAS ═══ -->
+<section class="slide-section">
+  <div class="sec-num">// 04 — Notícias</div>
+  <h2>Agente por Empresa<br/><em>+ Notícias</em></h2>
+  <div class="accent-bar"></div>
+</section>
+
+<!-- ═══ SLIDE 12: SKILL DE NOTÍCIAS ═══ -->
+<section>
+  <div class="slide-label">// notícias · yfinance · skill</div>
+  <h2>Skill de Notícias — yfinance + IA</h2>
+  <div class="h-line"></div>
+  <div class="g2">
+    <div>
+      <ul>
+        <li class="fragment"><strong>Por que yfinance?</strong> Gratuito, sem chave de API, funciona na hora, retorna notícias recentes de cada ação diretamente do Yahoo Finance</li>
+        <li class="fragment"><strong>Limitação honesta:</strong> notícias em inglês, sem controle de fonte, pode ter ruído — mas para demonstração didática é perfeito</li>
+        <li class="fragment"><strong>O que faremos:</strong> buscar as 5 notícias mais recentes de cada empresa e pedir ao Claude para classificar o sentimento e extrair o evento principal</li>
+      </ul>
+      <div class="cu fragment" style="margin-top:0.7rem;">
+        <div class="cul">⊹ Skill que criaremos</div>
+        Um arquivo <code style="font-family:'Space Mono',monospace;color:var(--accent3);font-size:0.72rem;">skill_noticias.md</code> que o agente usa como template para analisar qualquer conjunto de notícias financeiras.
+      </div>
+    </div>
+    <div class="code fragment" style="font-size:0.62rem;align-self:start;">
+      <div class="cl2">// python · buscar notícias com yfinance</div>
+      <span class="ck">import</span> <span class="cv">yfinance</span> <span class="ck">as</span> <span class="cv">yf</span><br/>
+      <span class="ck">import</span> <span class="cv">anthropic</span><br/><br/>
+      <span class="ck">def</span> <span class="cf">buscar_noticias</span>(<span class="cv">ticker</span>: <span class="cv">str</span>, <span class="cv">n</span>=<span class="cn">5</span>):<br/>
+      &nbsp;&nbsp;<span class="cv">acao</span> = <span class="cv">yf</span>.<span class="cf">Ticker</span>(<span class="cv">ticker</span>)<br/>
+      &nbsp;&nbsp;<span class="cv">noticias</span> = <span class="cv">acao</span>.<span class="cv">news</span>[:<span class="cv">n</span>]<br/>
+      &nbsp;&nbsp;<span class="ck">return</span> [<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;{<span class="cs">"titulo"</span>: <span class="cv">n</span>[<span class="cs">"content"</span>][<span class="cs">"title"</span>],<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"resumo"</span>: <span class="cv">n</span>[<span class="cs">"content"</span>].<span class="cf">get</span>(<span class="cs">"summary"</span>,<span class="cs">""</span>)}<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span class="ck">for</span> <span class="cv">n</span> <span class="ck">in</span> <span class="cv">noticias</span><br/>
+      &nbsp;&nbsp;]<br/><br/>
+      <span class="ck">def</span> <span class="cf">analisar_sentimento</span>(<span class="cv">ticker</span>, <span class="cv">noticias</span>):<br/>
+      &nbsp;&nbsp;<span class="cv">client</span> = <span class="cv">anthropic</span>.<span class="cf">Anthropic</span>()<br/>
+      &nbsp;&nbsp;<span class="cv">textos</span> = <span class="cv">"\\n"</span>.<span class="cf">join</span>([<span class="cv">n</span>[<span class="cs">"titulo"</span>] <span class="ck">for</span> <span class="cv">n</span> <span class="ck">in</span> <span class="cv">noticias</span>])<br/>
+      &nbsp;&nbsp;<span class="cv">resp</span> = <span class="cv">client</span>.<span class="cv">messages</span>.<span class="cf">create</span>(<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;model=<span class="cs">"claude-opus-4-5"</span>,<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;max_tokens=<span class="cn">300</span>,<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;system=<span class="cs">"Analise o sentimento das notícias. Responda: sentimento geral (Positivo/Negativo/Neutro), evento principal e nível de relevância (Alto/Médio/Baixo)."</span>,<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;messages=[{<span class="cs">"role"</span>:<span class="cs">"user"</span>, <span class="cs">"content"</span>: <span class="cs">f"Empresa: {ticker}\\n{textos}"</span>}]<br/>
+      &nbsp;&nbsp;)<br/>
+      &nbsp;&nbsp;<span class="ck">return</span> <span class="cv">resp</span>.<span class="cv">content</span>[<span class="cn">0</span>].<span class="cv">text</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SLIDE 13: PROMPT AGENTE COMPLETO ═══ -->
+<section>
+  <div class="slide-label">// notícias · agente completo · prompt</div>
+  <h2>Agente Completo — Análise + Notícias</h2>
+  <div class="h-line"></div>
+  <p style="font-size:0.76rem;color:#8a9ab8;margin-bottom:0.5rem;" class="fragment">
+    Modo Agent no Cursor → crie o arquivo <code style="font-family:'Space Mono',monospace;color:var(--accent3);">agente_noticias.py</code> → cole:
+  </p>
+  <div class="prompt fragment">
+    <div class="pl">// Prompt · Agente por Empresa + Notícias</div>
+    Crie um script Python <code style="color:var(--accent3);">agente_noticias.py</code> que para cada empresa (PETR4.SA, VALE3.SA, ITUB4.SA):<br/><br/>
+    <strong style="color:var(--text);">1.</strong> Busque as 5 notícias mais recentes via <code style="color:var(--accent3);">yfinance</code> (<code style="color:var(--accent3);">ticker.news</code>)<br/>
+    <strong style="color:var(--text);">2.</strong> Envie os títulos para a API da Anthropic e peça: sentimento geral, evento principal, nível de relevância<br/>
+    <strong style="color:var(--text);">3.</strong> Combine com o preço atual e variação da semana (também via yfinance)<br/>
+    <strong style="color:var(--text);">4.</strong> Imprima um relatório formatado por empresa<br/>
+    <strong style="color:var(--text);">5.</strong> Salve como <code style="color:var(--accent3);">relatorio_noticias.txt</code><br/><br/>
+    Use a chave da API da variável de ambiente <code style="color:var(--accent3);">ANTHROPIC_API_KEY</code>. Comentários em português.
+  </div>
+  <div class="hl fragment" style="margin-top:0.6rem;">
+    <div class="hll">✦ O que o relatório vai mostrar</div>
+    Para cada empresa: preço atual + variação + sentimento das notícias + evento principal. Em menos de 30 segundos — o que um analista levaria horas pesquisando manualmente.
+  </div>
+</section>
+
+<!-- ═══ SECTION: CLAUDE PROJECTS ═══ -->
+<section class="slide-section">
+  <div class="sec-num">// 05 — Claude para Finanças</div>
+  <h2>Agentes Claude<br/><em>prontos para usar</em></h2>
+  <div class="accent-bar"></div>
+</section>
+
+<!-- ═══ SLIDE 14: CLAUDE PROJECTS ═══ -->
+<section>
+  <div class="slide-label">// claude · projects · agentes para finanças</div>
+  <h2>Claude Projects — Seu Agente Financeiro Pessoal</h2>
+  <div class="h-line"></div>
+  <div class="g2">
+    <div>
+      <ul>
+        <li class="fragment"><strong>O que é:</strong> espaço no Claude.ai onde você configura um agente com instruções permanentes, arquivos de contexto e memória entre sessões</li>
+        <li class="fragment"><strong>Instruções do projeto:</strong> equivalente ao AGENTS.md — definidas uma vez, válidas sempre</li>
+        <li class="fragment"><strong>Arquivos de contexto:</strong> suba os CSVs e RDS das empresas — o agente os "conhece" em todas as conversas</li>
+        <li class="fragment"><strong>Memória:</strong> o projeto lembra conversas anteriores — diferente do chat comum</li>
+        <li class="fragment"><strong>Disponível no plano Pro</strong> (US$20/mês)</li>
+      </ul>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+      <div class="card gr fragment">
+        <div class="cl">// Como configurar — passo a passo</div>
+        <ul style="gap:0.3rem;">
+          <li style="font-size:0.72rem;"><strong>1.</strong> Claude.ai → clique em <strong>Projects</strong> → New Project</li>
+          <li style="font-size:0.72rem;"><strong>2.</strong> Nome: "Análise PETR4/VALE3/ITUB4"</li>
+          <li style="font-size:0.72rem;"><strong>3.</strong> Em <strong>Instructions</strong>: cole o conteúdo do AGENTS.md</li>
+          <li style="font-size:0.72rem;"><strong>4.</strong> Em <strong>Files</strong>: suba os CSVs da pasta dados_cvm/</li>
+          <li style="font-size:0.72rem;"><strong>5.</strong> Comece a conversar — o contexto já está carregado</li>
+        </ul>
+      </div>
+      <div class="card fragment">
+        <div class="cl">// Exemplo de instrução do projeto</div>
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:0.6rem 0.8rem;margin-top:0.3rem;font-family:'Space Mono',monospace;font-size:0.58rem;color:#8a9ab8;line-height:1.7;">
+          Você é analista financeiro especializado<br/>
+          em PETR4, VALE3 e ITUB4.<br/>
+          Os dados de balanço estão nos arquivos anexados.<br/>
+          Nunca recomende compra ou venda.<br/>
+          Sempre cite a conta CVM usada.
+        </div>
+      </div>
+      <div class="wn fragment">
+        <div class="wl">⚠ Limitação importante</div>
+        Claude Projects não executa código R/Python. Para execução, use Cursor ou Colab. Projects é ideal para <strong style="color:var(--text);">análise, interpretação e perguntas</strong> sobre os dados.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SLIDE 15: DEMONSTRAÇÃO CLAUDE PROJECT ═══ -->
+<section>
+  <div class="slide-label">// claude · demonstração ao vivo</div>
+  <h2>Demonstração — Claude Project em Ação</h2>
+  <div class="h-line"></div>
+  <p style="font-size:0.78rem;color:#8a9ab8;margin-bottom:0.7rem;" class="fragment">
+    Com o projeto configurado e os CSVs carregados, você pode perguntar diretamente:
+  </p>
+  <div class="g2">
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+      <div class="prompt fragment" style="font-size:0.74rem;">
+        <div class="pl">// Pergunta 1 · Comparativo</div>
+        "Com base nos dados das três empresas, qual apresentou o ROE mais consistente nos últimos 5 anos? Mostre em tabela."
+      </div>
+      <div class="prompt fragment" style="font-size:0.74rem;">
+        <div class="pl">// Pergunta 2 · Risco</div>
+        "Qual das três empresas tem maior risco de liquidez considerando o índice dívida/PL atual? Explique em linguagem simples."
+      </div>
+      <div class="prompt fragment" style="font-size:0.74rem;">
+        <div class="pl">// Pergunta 3 · Valuation</div>
+        "Se a SELIC cair para 10% no próximo ano, como isso afeta o valor intrínseco calculado para cada empresa? Mostre o raciocínio passo a passo."
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+      <div class="hl fragment">
+        <div class="hll">✦ Por que isso é poderoso</div>
+        Você não precisa saber R ou Python. Só precisa fazer <strong style="color:var(--text);">perguntas financeiras boas</strong>. A IA sabe onde estão os dados e como calcular.
+      </div>
+      <div class="cu fragment">
+        <div class="cul">⊹ Combinação ideal</div>
+        <strong style="color:var(--text);">Cursor</strong> para gerar e executar código →<br/>
+        <strong style="color:var(--text);">Claude Project</strong> para interpretar e responder perguntas →<br/>
+        <strong style="color:var(--text);">Você</strong> para validar e decidir
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SECTION: MCP ═══ -->
+<section class="slide-section">
+  <div class="sec-num">// 06 — MCP</div>
+  <h2>Model Context Protocol<br/><em>O que é e para que serve</em></h2>
+  <div class="accent-bar"></div>
+</section>
+
+<!-- ═══ SLIDE 16: O QUE É MCP ═══ -->
+<section>
+  <div class="slide-label">// mcp · conceito</div>
+  <h2>MCP — A Linguagem Universal dos Agentes</h2>
+  <div class="h-line"></div>
+  <div class="g2">
+    <div>
+      <ul>
+        <li class="fragment"><strong>MCP:</strong> Model Context Protocol — padrão aberto criado pela Anthropic para conectar LLMs a fontes de dados e ferramentas externas de forma padronizada</li>
+        <li class="fragment"><strong>Analogia:</strong> como o USB para dispositivos. Antes do USB, cada fabricante tinha seu conector. MCP é o USB dos agentes — qualquer modelo conecta a qualquer ferramenta</li>
+        <li class="fragment"><strong>Funcionamento:</strong> um servidor MCP expõe "ferramentas" que o LLM pode chamar — ler planilhas, escrever resultados, consultar APIs, acessar bancos de dados</li>
+        <li class="fragment"><strong>Quem usa:</strong> Claude, GPT-4o, Cursor — todos suportam MCP em 2026</li>
+        <li class="fragment"><strong>Para finanças:</strong> conecte diretamente ao Google Sheets onde você já tem seus dados — sem copiar e colar nada</li>
+      </ul>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+      <div class="card fragment">
+        <div class="cl">// Sem MCP vs Com MCP</div>
+        <table class="tbl" style="margin-top:0.3rem;">
+          <tr><th style="color:var(--muted);text-align:left;">Sem MCP</th><th style="color:var(--accent3);text-align:left;">Com MCP · Google Sheets</th></tr>
+          <tr><td style="color:#b0c0d8;">Você exporta CSV</td><td style="color:#b0c0d8;">Agente lê a planilha direto</td></tr>
+          <tr><td style="color:#b0c0d8;">Cola no chat</td><td style="color:#b0c0d8;">Acessa em tempo real</td></tr>
+          <tr><td style="color:#b0c0d8;">Salva resultado manualmente</td><td style="color:#b0c0d8;">Agente escreve na planilha</td></tr>
+          <tr><td style="color:#b0c0d8;">Dados desatualizados</td><td style="color:#b0c0d8;">Sempre sincronizado</td></tr>
+        </table>
+      </div>
+      <div class="hl fragment">
+        <div class="hll">✦ Caso de uso para hoje</div>
+        O agente lê os indicadores da Aula 2 numa planilha Google Sheets, calcula o sinal final e <strong style="color:var(--text);">escreve o resultado de volta</strong> em outra aba — tudo sem sair do Claude.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SLIDE 17: MCP GOOGLE SHEETS — CONFIGURAÇÃO ═══ -->
+<section>
+  <div class="slide-label">// mcp · google sheets · configuração</div>
+  <h2>MCP + Google Sheets — Configuração</h2>
+  <div class="h-line"></div>
+  <div class="g2">
+    <div>
+      <p style="font-size:0.78rem;color:#8a9ab8;margin-bottom:0.7rem;" class="fragment">
+        Usaremos o servidor MCP oficial do Google para Sheets — <strong style="color:var(--text);">sem escrever código de servidor</strong>. Só configurar e usar.
+      </p>
+      <div class="card fragment">
+        <div class="cl">// Pré-requisitos</div>
+        <ul style="gap:0.3rem;">
+          <li style="font-size:0.74rem;"><strong>Node.js</strong> instalado (<code style="font-family:'Space Mono',monospace;color:var(--accent3);">node --version</code> no terminal)</li>
+          <li style="font-size:0.74rem;"><strong>Claude Desktop</strong> (não o Claude.ai — o app desktop)</li>
+          <li style="font-size:0.74rem;"><strong>Conta Google</strong> com acesso ao Google Sheets</li>
+          <li style="font-size:0.74rem;"><strong>Planilha criada</strong> com os dados das empresas</li>
+        </ul>
+      </div>
+      <div class="cu fragment" style="margin-top:0.6rem;">
+        <div class="cul">⊹ Instalar Node.js</div>
+        Acesse <strong style="color:var(--text);">nodejs.org</strong> → Download LTS → instale normalmente. É gratuito e necessário para rodar servidores MCP.
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+      <div class="card gr fragment">
+        <div class="cl">// Passo a Passo — 5 minutos</div>
+        <ul style="gap:0.35rem;">
+          <li style="font-size:0.73rem;"><strong>1.</strong> Abra o terminal e instale o servidor MCP do Google:<br/>
+            <code style="font-family:'Space Mono',monospace;color:var(--accent3);font-size:0.62rem;">npx @modelcontextprotocol/server-gdrive</code></li>
+          <li style="font-size:0.73rem;"><strong>2.</strong> Claude Desktop → Settings → Developer → Edit Config</li>
+          <li style="font-size:0.73rem;"><strong>3.</strong> Adicione o bloco de configuração ao lado</li>
+          <li style="font-size:0.73rem;"><strong>4.</strong> Salve e reinicie o Claude Desktop</li>
+          <li style="font-size:0.73rem;"><strong>5.</strong> Claude pedirá autorização Google — clique em Permitir</li>
+        </ul>
+      </div>
+      <div class="code fragment" style="font-size:0.58rem;">
+        <div class="cl2">// claude_desktop_config.json</div>
+        {<br/>
+        &nbsp;&nbsp;<span class="cs">"mcpServers"</span>: {<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"google-sheets"</span>: {<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"command"</span>: <span class="cs">"npx"</span>,<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"args"</span>: [<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"-y"</span>,<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"@modelcontextprotocol/server-gdrive"</span><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+        &nbsp;&nbsp;}<br/>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SLIDE 18: MCP GOOGLE SHEETS — USO ═══ -->
+<section>
+  <div class="slide-label">// mcp · google sheets · uso ao vivo</div>
+  <h2>MCP + Google Sheets — Usando ao Vivo</h2>
+  <div class="h-line"></div>
+  <p style="font-size:0.76rem;color:#8a9ab8;margin-bottom:0.5rem;" class="fragment">
+    Com o MCP configurado, abra o <strong style="color:var(--text);">Claude Desktop</strong> e experimente estes prompts:
+  </p>
+  <div class="g2">
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+      <div class="prompt fragment" style="font-size:0.72rem;">
+        <div class="pl">// Prompt 1 · Ler e analisar</div>
+        "Acesse minha planilha Google Sheets chamada 'Análise PETR4 VALE3 ITUB4', leia a aba 'Indicadores' e me diga qual empresa tem o melhor ROE médio dos últimos 3 anos."
+      </div>
+      <div class="prompt fragment" style="font-size:0.72rem;">
+        <div class="pl">// Prompt 2 · Calcular e escrever</div>
+        "Leia os dados de ROE e Margem da aba 'Indicadores', calcule o Índice de Qualidade (ROE × Margem / Dívida), e escreva o resultado em uma nova aba chamada 'Sinais'."
+      </div>
+      <div class="prompt fragment" style="font-size:0.72rem;">
+        <div class="pl">// Prompt 3 · Pipeline completo</div>
+        "Leia a planilha 'Dados CVM', calcule o sinal do Random Forest para cada empresa com base nos indicadores disponíveis, e preencha a coluna 'Sinal IA' com o resultado."
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+      <div class="card gr fragment">
+        <div class="cl">// O que acontece por baixo</div>
+        <div style="font-family:'Space Mono',monospace;font-size:0.62rem;color:#8a9ab8;line-height:1.9;">
+          <span style="color:var(--accent);">Você</span> → digita o prompt<br/>
+          &nbsp;&nbsp;↓<br/>
+          <span style="color:#ffb347;">Claude</span> → chama a ferramenta MCP<br/>
+          &nbsp;&nbsp;↓<br/>
+          <span style="color:var(--accent3);">Servidor MCP</span> → acessa o Google Sheets<br/>
+          &nbsp;&nbsp;↓<br/>
+          <span style="color:#c0a0ff;">Google Sheets API</span> → retorna os dados<br/>
+          &nbsp;&nbsp;↓<br/>
+          <span style="color:var(--accent);">Claude</span> → processa e responde<br/>
+          &nbsp;&nbsp;↓<br/>
+          <span style="color:var(--accent3);">Planilha atualizada</span> automaticamente
+        </div>
+      </div>
+      <div class="wn fragment">
+        <div class="wl">⚠ Permissões e segurança</div>
+        O MCP acessa apenas as planilhas que você autorizar. Nunca compartilhe planilhas com dados sensíveis via MCP em ambientes não controlados. Para uso corporativo, configure OAuth com escopo restrito.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SLIDE 18b: MCP EXERCÍCIO ═══ -->
+<section>
+  <div class="slide-label">// mcp · google sheets · exercício</div>
+  <h2>MCP + Google Sheets — Faça Agora</h2>
+  <div class="h-line"></div>
+  <p style="font-size:0.78rem;color:#8a9ab8;margin-bottom:0.6rem;" class="fragment">
+    Crie uma planilha no Google Sheets e teste o MCP em 3 passos:
+  </p>
+  <div class="g2">
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+      <div class="card fragment">
+        <div class="cl">// Passo 1 · Criar a planilha</div>
+        <p>Acesse <strong style="color:var(--text);">sheets.new</strong> e crie uma planilha com os dados abaixo na aba "Indicadores":</p>
+        <table class="tbl" style="margin-top:0.4rem;font-size:0.65rem;">
+          <tr>
+            <th style="color:var(--accent);text-align:left;">Empresa</th>
+            <th style="color:var(--accent3);text-align:right;">ROE</th>
+            <th style="color:var(--accent3);text-align:right;">Margem</th>
+            <th style="color:#ffb347;text-align:right;">Dívida/PL</th>
+            <th style="color:#c0a0ff;text-align:right;">LPA</th>
+          </tr>
+          <tr><td style="color:#b0c0d8;">PETR4</td><td style="text-align:right;font-family:'Space Mono',monospace;">0,18</td><td style="text-align:right;font-family:'Space Mono',monospace;">0,22</td><td style="text-align:right;font-family:'Space Mono',monospace;">0,95</td><td style="text-align:right;font-family:'Space Mono',monospace;">8,50</td></tr>
+          <tr><td style="color:#b0c0d8;">VALE3</td><td style="text-align:right;font-family:'Space Mono',monospace;">0,24</td><td style="text-align:right;font-family:'Space Mono',monospace;">0,28</td><td style="text-align:right;font-family:'Space Mono',monospace;">0,42</td><td style="text-align:right;font-family:'Space Mono',monospace;">12,30</td></tr>
+          <tr><td style="color:#b0c0d8;">ITUB4</td><td style="text-align:right;font-family:'Space Mono',monospace;">0,21</td><td style="text-align:right;font-family:'Space Mono',monospace;">0,31</td><td style="text-align:right;font-family:'Space Mono',monospace;">8,10</td><td style="text-align:right;font-family:'Space Mono',monospace;">4,20</td></tr>
+        </table>
+      </div>
+      <div class="card pu fragment">
+        <div class="cl">// Passo 2 · Conectar via MCP</div>
+        <p>No Claude Desktop, com o MCP configurado, cole o prompt:</p>
+        <div style="background:var(--bg);border:1px solid rgba(0,255,179,0.3);border-radius:4px;padding:0.5rem 0.7rem;margin-top:0.4rem;font-size:0.7rem;color:#90e8c8;line-height:1.6;">
+          "Acesse a planilha 'Análise SBFin', leia a aba Indicadores e calcule o Índice de Qualidade = ROE × Margem / (1 + Dívida/PL) para cada empresa. Escreva o resultado em uma nova coluna."
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+      <div class="card gr fragment">
+        <div class="cl">// Passo 3 · Verificar resultado</div>
+        <p>O Claude vai:</p>
+        <ul style="gap:0.25rem;">
+          <li style="font-size:0.72rem;">Ler os dados da sua planilha</li>
+          <li style="font-size:0.72rem;">Calcular o índice para as 3 empresas</li>
+          <li style="font-size:0.72rem;">Escrever os resultados de volta na planilha</li>
+          <li style="font-size:0.72rem;">Identificar qual empresa tem melhor índice</li>
+        </ul>
+        <p style="margin-top:0.5rem;font-size:0.72rem;"><strong style="color:var(--text);">Abra o Google Sheets</strong> e veja a nova coluna preenchida automaticamente.</p>
+      </div>
+      <div class="hl fragment">
+        <div class="hll">✦ O que você acabou de fazer</div>
+        Conectou um LLM à sua planilha financeira. A partir de agora, qualquer dado que estiver no Google Sheets pode ser lido, calculado e atualizado pelo agente — sem exportar, sem copiar, sem colar.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SECTION: REFLEXÃO FINAL ═══ -->
+<section class="slide-section">
+  <div class="sec-num">// 07 — Fechamento</div>
+  <h2>O que Você<br/><em>Leva deste Curso</em></h2>
+  <div class="accent-bar"></div>
+</section>
+
+<!-- ═══ SLIDE 19: PIPELINE COMPLETO ═══ -->
+<section>
+  <div class="slide-label">// fechamento · pipeline completo das 3 aulas</div>
+  <h2>O Pipeline que Construímos Juntos</h2>
+  <div class="h-line"></div>
+  <table class="tbl fragment" style="font-size:0.72rem;">
+    <thead>
+      <tr>
+        <th style="color:var(--accent);text-align:left;width:12%;">Empresa</th>
+        <th style="color:var(--accent3);text-align:center;">Ret. 3a</th>
+        <th style="color:var(--accent3);text-align:center;">Sharpe</th>
+        <th style="color:#ffb347;text-align:center;">ROE</th>
+        <th style="color:#ffb347;text-align:center;">Margem</th>
+        <th style="color:#ffb347;text-align:center;">LPA</th>
+        <th style="color:#c0a0ff;text-align:center;">V. Intr.</th>
+        <th style="color:#ff8080;text-align:center;">RF</th>
+        <th style="color:var(--accent3);text-align:center;">Notícias</th>
+        <th style="color:var(--accent);text-align:center;">Sinal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="color:var(--text);font-family:'Space Mono',monospace;font-weight:700;">PETR4</td>
+        <td style="text-align:center;color:var(--accent3);font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:var(--accent3);font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#ffb347;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#ffb347;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#ffb347;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#c0a0ff;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#ff8080;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:var(--accent3);font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:var(--accent);font-family:'Space Mono',monospace;font-weight:600;">ao vivo</td>
+      </tr>
+      <tr>
+        <td style="color:var(--text);font-family:'Space Mono',monospace;font-weight:700;">VALE3</td>
+        <td style="text-align:center;color:var(--accent3);font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:var(--accent3);font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#ffb347;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#ffb347;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#ffb347;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#c0a0ff;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#ff8080;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:var(--accent3);font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:var(--accent);font-family:'Space Mono',monospace;font-weight:600;">ao vivo</td>
+      </tr>
+      <tr>
+        <td style="color:var(--text);font-family:'Space Mono',monospace;font-weight:700;">ITUB4</td>
+        <td style="text-align:center;color:var(--accent3);font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:var(--accent3);font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#ffb347;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#ffb347;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#ffb347;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#c0a0ff;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:#ff8080;font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:var(--accent3);font-family:'Space Mono',monospace;">ao vivo</td>
+        <td style="text-align:center;color:var(--accent);font-family:'Space Mono',monospace;font-weight:600;">ao vivo</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="g3 fragment" style="margin-top:0.8rem;">
+    <div style="text-align:center;">
+      <div style="font-family:'Syne',sans-serif;font-size:2.5rem;font-weight:800;background:linear-gradient(90deg,var(--accent),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">3</div>
+      <div style="font-family:'Space Mono',monospace;font-size:0.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-top:0.2rem;">Aulas</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-family:'Syne',sans-serif;font-size:2.5rem;font-weight:800;background:linear-gradient(90deg,#ffb347,#ff6eb4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">10</div>
+      <div style="font-family:'Space Mono',monospace;font-size:0.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-top:0.2rem;">Colunas construídas</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-family:'Syne',sans-serif;font-size:2.5rem;font-weight:800;background:linear-gradient(90deg,var(--accent2),#ff6eb4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">1</div>
+      <div style="font-family:'Space Mono',monospace;font-size:0.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-top:0.2rem;">Pipeline completo</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SLIDE 20: O QUE MUDA ═══ -->
+<section>
+  <div class="slide-label">// fechamento · reflexão</div>
+  <h2>O que Muda na Sua Rotina Profissional</h2>
+  <div class="h-line"></div>
+  <div class="g2">
+    <div>
+      <div class="card fragment">
+        <div class="cl">// Antes deste curso</div>
+        <ul style="gap:0.3rem;">
+          <li style="font-size:0.75rem;">Análise manual de balanços — horas por empresa</li>
+          <li style="font-size:0.75rem;">Pesquisa de notícias — abrir cada portal separado</li>
+          <li style="font-size:0.75rem;">Valuation em planilha — refeito a cada trimestre</li>
+          <li style="font-size:0.75rem;">Código escrito do zero ou terceirizado</li>
+          <li style="font-size:0.75rem;">Relatórios produzidos um a um</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="card gr fragment">
+        <div class="cl">// Depois deste curso</div>
+        <ul style="gap:0.3rem;">
+          <li style="font-size:0.75rem;">Agente coleta e calcula automaticamente</li>
+          <li style="font-size:0.75rem;">Skill de notícias roda em segundos por empresa</li>
+          <li style="font-size:0.75rem;">Pipeline de valuation atualizado com um prompt</li>
+          <li style="font-size:0.75rem;">Código gerado pelo Cursor com instrução em português</li>
+          <li style="font-size:0.75rem;">Relatórios gerados automaticamente pelo agente</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wn fragment" style="margin-top:0.8rem;">
+    <div class="wl">⚠ O que não muda</div>
+    <strong style="color:var(--text);">Seu julgamento profissional.</strong> IA automatiza a coleta, o cálculo e a formatação. A interpretação, a contextualização e a responsabilidade pela decisão são sempre suas — e continuarão sendo.
+  </div>
+</section>
+
+<!-- ═══ SLIDE 21: PRÓXIMOS PASSOS ═══ -->
+<section>
+  <div class="slide-label">// fechamento · próximos passos</div>
+  <h2>O que Fazer Esta Semana</h2>
+  <div class="h-line"></div>
+  <div class="g2">
+    <div class="card gr fragment">
+      <div class="cl">// Ações imediatas (hoje)</div>
+      <ul style="gap:0.35rem;">
+        <li><strong>Crie seu AGENTS.md</strong> — 3 regras, sua identidade profissional, onde salvar resultados</li>
+        <li><strong>Transforme um prompt</strong> que você usa sempre em skill — salve como arquivo .md</li>
+        <li><strong>Configure um Claude Project</strong> com os dados das empresas que você acompanha</li>
+      </ul>
+    </div>
+    <div class="card pu fragment">
+      <div class="cl">// Esta semana</div>
+      <ul style="gap:0.35rem;">
+        <li><strong>Execute o agente de notícias</strong> para uma empresa da sua carteira real</li>
+        <li><strong>Instale o pacote mcp</strong> e rode o servidor de exemplo</li>
+        <li><strong>Repita o pipeline</strong> das Aulas 2 e 3 para uma empresa diferente usando o Cursor</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cu fragment" style="margin-top:0.8rem;">
+    <div class="cul">⊹ A pergunta que vale levar para casa</div>
+    <strong style="color:var(--text);">Qual tarefa financeira repetitiva da sua semana</strong> você entregaria a um agente — se confiasse nele? Essa é a próxima skill que você precisa construir.
+  </div>
+</section>
+
+<!-- ═══ SLIDE 22: RESUMO DO CURSO ═══ -->
+<section>
+  <div class="slide-label">// fechamento · resumo do curso completo</div>
+  <h2>Resumo — IA Aplicada a Finanças · SBFin 2026</h2>
+  <div class="h-line"></div>
+  <div class="g3 fragment">
+    <div class="card">
+      <div class="cl">// Aula 1 ✓</div>
+      <h4>Fundamentos</h4>
+      <p>Hayek, LLMs, Transformers, RAG. Cursor e ecossistema. PETR4/VALE3/ITUB4 — dados de mercado e visualização.</p>
+    </div>
+    <div class="card pu">
+      <div class="cl">// Aula 2 ✓</div>
+      <h4>Valuation com IA</h4>
+      <p>Graham, Buffett, Gordon. ROE detalhado. GetDFPData2. Random Forest para LPA. DCF com parâmetros de IA.</p>
+    </div>
+    <div class="card gr">
+      <div class="cl">// Aula 3 ✓</div>
+      <h4>Agentes e MCP</h4>
+      <p>Skills, AGENTS.md, orquestração. Agente simples ao vivo. Notícias via yfinance. Claude Projects. MCP.</p>
+    </div>
+  </div>
+  <div class="quote fragment" style="margin-top:0.8rem;">
+    "IA não substitui o analista financeiro. Ela amplifica o analista que sabe usá-la."
+    <span class="qa">— Prof. André Nunes Maranhão · FGV-EESP · FEA-USP · SBFin 2026</span>
+  </div>
+</section>
+
+<!-- ═══ SLIDE 23: ENCERRAMENTO ═══ -->
+<section class="slide-title" style="align-items:center;text-align:center;">
+  <div class="slide-badge" style="margin:0 auto 2rem;">FGV-EESP · FEA-USP · SBFin 2026</div>
+  <h1 style="text-align:center;"><span class="accent-line">Obrigado!</span></h1>
+  <p style="font-size:0.75rem;color:#6a8ab0;margin:1.5rem auto;max-width:420px;text-align:center;line-height:1.7;">
+    Prof. André Nunes Maranhão<br/>
+    FGV-EESP · FEA-USP<br/>
+    Programa MASTER em Finanças, Economia e Data Science
+  </p>
+  <div class="meta" style="justify-content:center;">
+    <span>Aula 03</span> · IA Aplicada a Finanças · SBFin 2026
+  </div>
+</section>
+
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.js"></script>
+<script>
+Reveal.initialize({
+  hash:true, slideNumber:'c/t', progress:true,
+  transition:'fade', transitionSpeed:'fast',
+  backgroundTransition:'fade', center:false,
+  width:1280, height:720, margin:0,
+  minScale:0.2, maxScale:2.0,
+  fragments:true, controls:true,
+  keyboard:true, overview:true, touch:true,
+});
+</script>
+
+<script>
+(function(){
+  const AUTHORIZED = [
+    "ana.k.sinski@gmail.com",
+    "andre.luiz6@unemat.br",
+    "andressasantana993@gmail.com",
+    "barbara.hoepers03@gmail.com",
+    "diego.etges@cresol.com.br",
+    "douglasbrancosantana@gmail.com",
+    "douglaswill@gmail.com",
+    "elimoresqui@gmail.com",
+    "elisa.aerosul@gmail.com",
+    "flavioespinosa.com@gmail.com",
+    "jeremiassantosrodrigues@gmail.com",
+    "jucelia.martins@unemat.br",
+    "kelly.dalek@unemat.br",
+    "levi.aquino@unemat.br",
+    "lizabiacarmo2016@gmail.com",
+    "magnoluciene22@gmail.com",
+    "maikwillhans@gmail.com",
+    "medeirosrutiele26.com@gmail.com",
+    "michellevasconcelossoares@gmail.com",
+    "mult.lilian@outlook.com",
+    "oliveira.paola@unemat.br",
+    "ricardo_teckio@hotmail.com",
+    "taniapachecoana@gmail.com",
+    "taynabrandao28@gmail.com",
+    "valdes.ferreira@unemat.br",
+    "vanessasilva0857@gmail.com",
+    "vivianealencar.estudos@gmail.com",
+    "yasmim.pessi@unemat.br",
+    "andrenmaranhao@gmail.com"
+  ];
+  const SK='sbfin_ia_auth3', EK='sbfin_ia_expiry3', SH=8;
+  function ok(){
+    const e=sessionStorage.getItem(SK),x=sessionStorage.getItem(EK);
+    if(!e||!x)return false;
+    if(Date.now()>parseInt(x)){sessionStorage.removeItem(SK);sessionStorage.removeItem(EK);return false;}
+    return AUTHORIZED.includes(e.trim().toLowerCase());
+  }
+  function lock(){
+    const r=document.querySelector('.reveal');
+    if(r)r.style.display='none';
+    document.body.style.overflow='hidden';
+    const o=document.createElement('div');
+    o.id='ao';
+    o.innerHTML=`<div style="position:fixed;inset:0;z-index:99999;background:#020510;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:Inter,sans-serif;">
+      <div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(0,200,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,255,0.04) 1px,transparent 1px);background-size:60px 60px;"></div>
+      <div style="position:relative;z-index:1;background:rgba(8,15,30,0.95);border:1px solid rgba(0,200,255,0.2);border-radius:10px;padding:2.5rem 3rem;width:100%;max-width:420px;box-shadow:0 20px 80px rgba(0,0,0,0.7);">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#00c8ff,#7b2fff);border-radius:10px 10px 0 0;"></div>
+        <div style="font-family:'Space Mono',monospace;font-size:0.6rem;color:#00c8ff;border:1px solid #00c8ff;padding:0.2rem 0.6rem;border-radius:2px;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1.5rem;display:inline-flex;align-items:center;gap:0.4rem;">
+          <span style="width:5px;height:5px;background:#00c8ff;border-radius:50%;display:inline-block;"></span>SBFin · Aula 3 · Acesso Restrito
+        </div>
+        <h2 style="font-family:Syne,sans-serif;font-size:1.55rem;font-weight:800;color:#e8f0ff;margin:0 0 0.3rem;line-height:1.2;">IA Aplicada<br><span style="background:linear-gradient(90deg,#00c8ff,#7b2fff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">a Finanças</span></h2>
+        <p style="font-size:0.78rem;color:#6a7a9a;margin:0 0 1.6rem;line-height:1.5;">Aula 3 — SBFin 2026 · Nova Mutum/MT<br>Digite o e-mail com que você se inscreveu.</p>
+        <label style="display:block;font-family:'Space Mono',monospace;font-size:0.58rem;color:#00c8ff;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.35rem;">// E-mail de acesso</label>
+        <input id="ae" type="email" placeholder="seu@email.com" style="width:100%;box-sizing:border-box;background:#010812;border:1px solid rgba(0,200,255,0.25);border-radius:4px;padding:0.65rem 0.9rem;font-family:Inter,sans-serif;font-size:0.86rem;color:#e8f0ff;outline:none;margin-bottom:0.2rem;" />
+        <div id="am" style="font-size:0.7rem;color:#ff8080;min-height:1.1rem;margin-bottom:0.9rem;font-family:'Space Mono',monospace;"></div>
+        <button onclick="ca()" style="width:100%;background:linear-gradient(135deg,#00ffb3,#00c8ff);color:#020510;font-family:'Space Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.08em;border:none;border-radius:4px;padding:0.7rem;cursor:pointer;">→ Acessar Aula 3</button>
+        <p style="font-size:0.62rem;color:#3a4a6a;text-align:center;margin-top:1rem;font-family:'Space Mono',monospace;">Acesso restrito aos alunos inscritos.</p>
+      </div></div>`;
+    document.body.appendChild(o);
+    setTimeout(()=>{const i=document.getElementById('ae');if(i){i.focus();i.addEventListener('keydown',e=>{if(e.key==='Enter')ca();});}},100);
+  }
+  window.ca=function(){
+    const i=document.getElementById('ae'),m=document.getElementById('am');
+    if(!i)return;
+    const e=i.value.trim().toLowerCase();
+    if(!e){m.textContent='⚠ Digite seu e-mail para continuar.';return;}
+    if(AUTHORIZED.includes(e)){
+      const x=Date.now()+SH*3600000;
+      sessionStorage.setItem(SK,e);sessionStorage.setItem(EK,x.toString());
+      const o=document.getElementById('ao');
+      if(o){o.style.transition='opacity 0.4s';o.style.opacity='0';
+        setTimeout(()=>{o.remove();const r=document.querySelector('.reveal');if(r)r.style.display='';
+          document.body.style.overflow='';if(typeof Reveal!=='undefined')Reveal.layout();},400);}
+    } else {
+      m.textContent='✗ E-mail não encontrado. Verifique o endereço cadastrado.';
+      i.style.borderColor='rgba(255,80,80,0.5)';i.focus();
+      setTimeout(()=>{i.style.borderColor='rgba(0,200,255,0.25)';m.textContent='';},3000);
+    }
+  };
+  document.addEventListener('DOMContentLoaded',()=>{if(!ok())lock();});
+})();
+</script>
+</body>
+</html>
